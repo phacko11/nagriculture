@@ -8,7 +8,11 @@
     "FAQs": "FAQs",
     "Company": "Company",
     "Social": "Contact",
-    "Pricing": "Pricing"
+    "Pricing": "Pricing",
+    "Slogan": "Enhance your investment performance",
+    "CTA": "Try now for free",
+    "CompanyInfo": "Miquant Joint Stock Company | TIN: 0318906170",
+    "Address": "5A/2 Tran Phu, Cho Quan Ward, Ho Chi Minh City"
   },
   "HomePage": {
     "Headline1": "Gain the Edge in Investment",
@@ -30,11 +34,11 @@
     },
     "WhoItsFor": {
       "Headline": "Solutions for Every Level of Investment",
-      "Title1":"Individual Investors & Analysts",
+      "Title1": "Individual Investors & Analysts",
       "Card1": "Quickly identify opportunities and detect risks through comprehensive analysis of markets, news, and crowd sentiment — all backed by verified data.",
-      "Title2":"Funds & Institutions",
+      "Title2": "Funds & Institutions",
       "Card2": "Automate research workflows, enhance team efficiency, and make faster, more accurate decisions with proprietary AI models.",
-      "Title3":"Developers & Engineers",
+      "Title3": "Developers & Engineers",
       "Card3": "Build custom financial applications with seamless integration of clean, reliable data directly into your systems."
     },
     "Insight": {
@@ -94,15 +98,22 @@
     "CoreValues": {
       "Headline": "Values That Make the Difference",
       "Values": [
-        {"Title":"Transparent, Data-Driven Analysis",
-          "Desc":"Every investment thesis must be built on verifiable, auditable data. We believe in eliminating guesswork, replacing bias with transparent, logical, and evidence-based analysis."},
-        {"Title":"Built by Finance Experts, for Real Investors",
-          "Desc":"Miquant’s mission is to bridge the gap between professional-grade analytics and individual investors. We combine financial expertise and technology to make complex methodologies accessible through a simple, intuitive platform."
+        {
+          "Title": "Transparent, Data-Driven Analysis",
+          "Desc": "Every investment thesis must be built on verifiable, auditable data. We believe in eliminating guesswork, replacing bias with transparent, logical, and evidence-based analysis."
         },
-        {"Title":"Your Data, Your Ownership",
-          "Desc":"We don’t sell your data. We empower you to own it. Our platform lets you explore, extract, and build your unique investment perspective - ensuring your decisions are independent, well-founded, and strategic."},
-        {"Title":"Security, Transparency, No Black Box",
-          "Desc":"Miquant is built with the highest security standards and your data is fully respected. More importantly, every AI model and algorithm we use is explainable and verifiable, so you always understand the “why” behind every result."}
+        {
+          "Title": "Built by Finance Experts, for Real Investors",
+          "Desc": "Miquant’s mission is to bridge the gap between professional-grade analytics and individual investors. We combine financial expertise and technology to make complex methodologies accessible through a simple, intuitive platform."
+        },
+        {
+          "Title": "Your Data, Your Ownership",
+          "Desc": "We don’t sell your data. We empower you to own it. Our platform lets you explore, extract, and build your unique investment perspective - ensuring your decisions are independent, well-founded, and strategic."
+        },
+        {
+          "Title": "Security, Transparency, No Black Box",
+          "Desc": "Miquant is built with the highest security standards and your data is fully respected. More importantly, every AI model and algorithm we use is explainable and verifiable, so you always understand the “why” behind every result."
+        }
       ]
     },
     "Mission": "Our mission is to empower the next generation of investors with the confidence to make smarter decisions. We achieve this by building intuitive tools that combine the power of AI and quantitative finance - helping investors move from automated data analysis to transparent, personalized strategies."
@@ -119,5 +130,284 @@
     "FactorReport": "Factor Report",
     "QuantitativeFinance": "Quantitative Finance",
     "Locale": "en-US"
+  },
+  "faqs": [
+    {
+      "summary": "What is the Miquant platform?",
+      "details": "Miquant is an advanced platform that combines quantitative analysis and artificial intelligence, offering in-depth tools to help investors enhance decision-making and better understand the financial markets. Miquant supports everything from basic market monitoring to complex stock ranking with a smart AI assistant."
+    },
+    {
+      "summary": "How can Miquant optimize your investment process?",
+      "details": "Miquant is built to integrate flexibly into your investment workflow. With its ability to provide detailed insights, optimize strategies, and deliver AI-based recommendations, Miquant helps improve both traditional and quantitative investing approaches."
+    },
+    {
+      "summary": "What are the most valuable features for investors?",
+      "details": "Miquant makes it easier for investors to monitor the market through intuitive quantitative tools and clear, data-backed signals. From market sentiment, news, macro events to financial data — everything is AI-processed so you don't miss opportunities and can better manage risk."
+    },
+    {
+      "summary": "What portfolio allocation algorithms does Miquant use?",
+      "details": "Miquant provides powerful tools for portfolio construction and risk management, ranging from basic Mean-Variance Portfolio (MVP) models to advanced machine learning algorithms like Hierarchical Risk Parity (HRP) and complex network-based optimization methods."
+    },
+    {
+      "summary": "What makes Miquant's AI system outstanding and reliable?",
+      "details": "Miquant applies agentic AI and multi-agent AI, with specialized agents working together to analyze financial data, news, and market sentiment. The system produces transparent, explainable investment signals that support fast, accurate, and informed decision-making."
+    },
+    {
+      "summary": "What knowledge and information is Miquant's AI trained on?",
+      "details": "Miquant’s AI agents are trained on deep financial data, market news, investor sentiment, and real-world user behavior. Combined with proprietary algorithms and quantitative analysis, the system continuously learns and adapts to deliver precise, practical investment suggestions tailored to user needs."
+    },
+    {
+      "summary": "How does the AI Ranking system work?",
+      "details": "Miquant’s AI Ranking system continuously adapts and evolves based on user input and preferences. By learning from user priorities and investment requirements (risk appetite, portfolio rebalancing, optimization), the platform delivers personalized portfolios aligned with individual goals and strategies."
+    },
+    {
+      "summary": "How does Miquant ensure AI reliability?",
+      "details": "Miquant ensures AI reliability through model cross-validation, user feedback scoring, and strict data filtering before training. As a result, the AI system remains transparent, explainable, and closely aligned with real-world investment needs."
+    }
+  ],
+  "Pricing": {
+    "PackagesAndPrices": {
+      "title": "Service Packages & Pricing",
+      "subtitle": "Get big discounts with quarterly or yearly billing, and save more on your plan.",
+      "billing": {
+        "monthly": "Monthly",
+        "quarterly": "Quarterly",
+        "yearly": "Yearly"
+      },
+      "tiers": {
+        "Free": {
+          "title": "Free",
+          "price": {
+            "monthly": "Free",
+            "quarterly": "Free",
+            "yearly": "Free"
+          },
+          "featureTitle": "Key Features:",
+          "features": [
+            "Stocks in **VN30**",
+            "Auto strategy builder: **03 strategies/month**",
+            "**Factor reports** + stock screener",
+            "Miquant AI: **5 times/day**"
+          ]
+        },
+        "Standard": {
+          "title": "Standard",
+          "price": {
+            "monthly": "349.000",
+            "quarterly": "599.000",
+            "yearly": "2.290.000"
+          },
+          "featureTitle": "Includes all Free features, plus:",
+          "features": [
+            "Stocks in **HOSE**",
+            "Auto strategy builder: **15 strategies/month**",
+            "**Miquant Portfolio + Top automated strategies**",
+            "Miquant AI: **30 times/day**",
+            "Trending topics",
+            "Market sentiment analysis",
+            "Auto stock valuation"
+          ]
+        },
+        "Premium": {
+          "title": "Premium",
+          "price": {
+            "monthly": "1.889.000",
+            "quarterly": "3.999.000",
+            "yearly": "14.900.000"
+          },
+          "featureTitle": "Includes all Standard features, plus:",
+          "features": [
+            "**All stocks**",
+            "**Unlimited:** Auto strategy builder",
+            "**Unlimited:** Miquant AI",
+            "**Unlimited:** Strategy, backtest, portfolio tracking"
+          ]
+        },
+        "Enterprise": {
+          "title": "Enterprise",
+          "price": {
+            "monthly": "Contact",
+            "quarterly": "Contact",
+            "yearly": "Contact"
+          },
+          "featureTitle": "Includes all Advanced features, plus:",
+          "features": [
+            "**API integration** for real-time quant signals",
+            "Custom **quant strategies** for enterprise"
+          ]
+        }
+      },
+      "discount": "Save",
+      "badge": "Popular",
+      "currencySymbol": "₫"
+    },
+    "Comparison": {
+      "title": "Detailed Feature Comparison",
+      "subtitle": "See what’s included in each service plan",
+      "tiers": {
+        "Free": "Free",
+        "Standard": "Standard",
+        "Advanced": "Advanced"
+      },
+      "table": [
+        {
+          "tab": "Stocks",
+          "feature": "Overview",
+          "values": [
+            "(VN30)",
+            "(HOSE)",
+            "(Unlimited)"
+          ]
+        },
+        {
+          "tab": "",
+          "feature": "Sentiment",
+          "values": [
+            "(VN30)",
+            "(HOSE)",
+            "(Unlimited)"
+          ]
+        },
+        {
+          "tab": "",
+          "feature": "Financials",
+          "values": [
+            "✓",
+            "✓",
+            "✓"
+          ]
+        },
+        {
+          "tab": "",
+          "feature": "Risk",
+          "values": [
+            "✓",
+            "✓",
+            "✓"
+          ]
+        },
+        {
+          "tab": "Market",
+          "feature": "Overview",
+          "values": [
+            "✓",
+            "✓",
+            "✓"
+          ]
+        },
+        {
+          "tab": "",
+          "feature": "Sentiment",
+          "values": [
+            "",
+            "✓",
+            "✓"
+          ]
+        },
+        {
+          "tab": "",
+          "feature": "Market Analysis",
+          "values": [
+            "",
+            "✓",
+            "✓"
+          ]
+        },
+        {
+          "tab": "Macro",
+          "feature": "Overview",
+          "values": [
+            "",
+            "✓",
+            "✓"
+          ]
+        },
+        {
+          "tab": "",
+          "feature": "Economic Growth",
+          "values": [
+            "",
+            "✓",
+            "✓"
+          ]
+        },
+        {
+          "tab": "",
+          "feature": "Finance - Monetary",
+          "values": [
+            "",
+            "✓",
+            "✓"
+          ]
+        },
+        {
+          "tab": "Heatmap",
+          "feature": "",
+          "values": [
+            "✓",
+            "✓",
+            "✓"
+          ]
+        },
+        {
+          "tab": "Watchlists",
+          "feature": "",
+          "values": [
+            "5 lists (up to 10 stocks each)",
+            "50 lists (up to 50 stocks each)",
+            "500 lists (up to 100 stocks each)"
+          ]
+        },
+        {
+          "tab": "AI Ranking",
+          "feature": "",
+          "values": [
+            "3 strategies/month (VN100 + VN30)",
+            "15 strategies/month (VN100 + VN30)",
+            "Unlimited"
+          ]
+        },
+        {
+          "tab": "Recommendation",
+          "feature": "",
+          "values": [
+            "Basic Filter + Factor",
+            "Miquant Port + Top AI Ranking",
+            "Miquant Port + Top AI Ranking"
+          ]
+        },
+        {
+          "tab": "Chatbot",
+          "feature": "",
+          "values": [
+            "5x/day (No Valuation Tool)",
+            "30x/day (Valuation Tool 5x/day)",
+            "100x/day (Valuation Tool 30x/day)"
+          ]
+        },
+        {
+          "tab": "Top News",
+          "feature": "",
+          "values": [
+            "Top 3 news",
+            "Unlimited",
+            "Unlimited"
+          ]
+        }
+      ]
+    },
+    "BusinessSection": {
+      "title": "Business Plan – Special Features",
+      "intro": "Includes all Advanced plan features, plus:",
+      "features": [
+        "API integration for real-time quantitative signals",
+        "Custom quantitative strategy development for enterprises"
+      ],
+      "contact": {
+        "text1": "Please",
+        "text2": "for more details and support.",
+        "linkText": "contact the Miquant team"
+      }
+    }
   }
 }

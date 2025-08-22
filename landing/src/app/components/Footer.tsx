@@ -34,8 +34,8 @@ const Footer = () => {
                                 gutterBottom
                                 sx={{ fontWeight: 'bold', mb: 3, fontSize: {xs: fonts.sizes.md, md: fonts.sizes.lg} }}
                             >
-                                Nâng cao hiệu suất đầu tư của bạn
-                            </Typography>
+                                {t('Slogan')}
+                            </Typography>   
                             <Button
                                 variant="contained"
                                 href="https://app.miquant.vn/"
@@ -53,7 +53,7 @@ const Footer = () => {
                                     },
                                 }}
                             >
-                                Trải nghiệm miễn phí
+                                {t('CTA')}
                             </Button>
                         </Box>
                         <Stack direction="column" spacing={2.5} sx={{ height: '100%' }}>
@@ -69,12 +69,12 @@ const Footer = () => {
                                 />
                             </Stack>
                             <Typography variant="body2" sx={{ color: 'grey.400' }}>
-                                CÔNG TY CỔ PHẦN MIQUANT | MST: 0318906170
+                                {t('CompanyInfo')}
                             </Typography>
                             {/* Spacer to push copyright to the bottom */}
                             <Box sx={{ flexGrow: 1 }} />
                             <Typography variant="body2" sx={{ color: 'grey.400' }}>
-                                © 2025 Miquant | 5A/2 Trần Phú, P. Chợ Quán, TP. Hồ Chí Minh | (+84) 769 810 247
+                                © 2025 Miquant | {t('Address')} | (+84) 769 810 247
                             </Typography>
                         </Stack>
                     </Container>
@@ -103,7 +103,7 @@ const Footer = () => {
                             {t('Social')}
                         </Typography>
                         <Stack direction="row" spacing={0}>
-                            <IconButton href="#" aria-label="email" sx={{ color: 'white' }}>
+                            <IconButton href="mailto:info@miquant.vn" aria-label="email" sx={{ color: 'white' }}>
                                 <EmailIcon fontSize="large" />
                             </IconButton>
                             <IconButton href="https://www.linkedin.com/company/miquant" aria-label="linkedin" sx={{ color: 'white' }}>

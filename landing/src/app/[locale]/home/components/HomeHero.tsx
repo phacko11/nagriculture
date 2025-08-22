@@ -6,6 +6,7 @@ import AnimatedBackground from "./AnimatedBackground";
 import { useTranslations } from "next-intl";
 import { useTheme } from '@mui/material/styles';
 import GlobalStyles from "@mui/material/GlobalStyles";
+import ParticleNetworkAnimation from "./AnimatedBackground2";
 
 
 export default function HomeHero() {
@@ -39,7 +40,7 @@ export default function HomeHero() {
             backgroundColor: 'white', // Fallback background color
             boxShadow: '0px 4px 6px rgba(131, 131, 131, 0.15)',
         }}>
-            <AnimatedBackground />
+            <ParticleNetworkAnimation />
             <Box sx={{
                 width: '100%',
                 display: 'flex',
@@ -50,8 +51,8 @@ export default function HomeHero() {
                 alignItems: 'center',
                 position: 'relative', // Sits in the normal flow
                 zIndex: 1, // Ensures content is above the background
-                backgroundColor: 'rgba(255, 255, 255, 0.65)', // Adjust transparency as needed
-                backdropFilter: 'blur(4px)', // This creates the blur effect
+                backgroundColor: 'rgba(255, 255, 255, 0.3)', // Adjust transparency as needed
+                backdropFilter: 'blur(2px)', // This creates the blur effect
             }}>
                 <Box
                     sx={{

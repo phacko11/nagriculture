@@ -5,55 +5,10 @@ import { Card, CardContent, Typography, Grid, Box, List, ListItem, ListItemIcon,
 import { motion, AnimatePresence } from 'framer-motion';
 import { Check, CheckCircle, Star } from '@mui/icons-material';
 import { Variants } from "framer-motion";
+import { useTranslations } from 'next-intl';
 
 // --- DATA --- (No changes here)
-const pricingTiers = [
-    {
-        title: 'Free',
-        price: { monthly: 'Miễn phí', quarterly: 'Miễn phí', yearly: 'Miễn phí' },
-        featureTitle: 'Tính năng chính:',
-        features: [
-            'Cổ phiếu trong **VN30**',
-            'Thiết kế chiến lược tự động: **03 chiến lược/tháng**',
-            'Báo cáo **Factor** + lọc cổ phiếu',
-            'Miquant AI: **5 lần/ngày**',
-        ],
-    },
-    {
-        title: 'Standard',
-        price: { monthly: '349.000', quarterly: '599.000', yearly: '2.290.000' },
-        featureTitle: 'Bao gồm các tính năng gói Free, cộng thêm:',
-        features: [
-            'Cổ phiếu trong **HOSE**',
-            'Thiết kế chiến lược tự động: **15 chiến lược/tháng**',
-            'Báo cáo **Miquant Portfolio + Top chiến lược tự động**',
-            'Miquant AI: **30 lần/ngày**',
-            'Chủ đề nổi bật',
-            'Phân tích tâm lý thị trường',
-            'Định giá cổ phiếu tự động',
-        ],
-    },
-    {
-        title: 'Premium',
-        price: { monthly: '1.889.000', quarterly: '3.999.000', yearly: '14.900.000' },
-        featureTitle: 'Bao gồm các tính năng gói Standard, cộng thêm:',
-        features: [
-            '**Tất cả cổ phiếu**',
-            '**Không giới hạn:** Thiết kế chiến lược tự động',
-            '**Không giới hạn:** Miquant AI',
-            '**Không giới-hạn:** Thiết kế, backtest, theo dõi danh mục'
-        ],
-    },
-    {
-        title: 'Enterprise',
-        price: { monthly: 'Liên hệ', quarterly: 'Liên hệ', yearly: 'Liên hệ' },
-        featureTitle: 'Bao gồm tất cả tính năng gói Advanced, cộng thêm:',
-        features: [
-            'Kết nối **API** để nhận tín hiệu định lượng real time',
-            'Xây dựng **chiến lược định lượng riêng** cho doanh nghiệp'
-        ],
-    },
-];
+
 
 // --- HELPER FUNCTIONS --- (No changes here)
 const parseFeatureText = (text) => {
@@ -76,7 +31,6 @@ const parseFeatureText = (text) => {
 
 const parsePrice = (priceStr) => parseInt(String(priceStr).replace(/\./g, ''));
 const formatPrice = (priceNum) => priceNum.toLocaleString('vi-VN');
-
 
 // --- COMPONENTS --- (No changes here)
 const FeatureListItem = ({ text }) => (
@@ -119,6 +73,7 @@ const discountVariants: Variants = {
 };
 
 export default function PackagesAndPrices() {
+    const t = useTranslations('Pricing.PackagesAndPrices');
     const [billingPeriod, setBillingPeriod] = useState('monthly');
 
     const handleBillingPeriodChange = (event, newPeriod) => {
@@ -126,13 +81,26 @@ export default function PackagesAndPrices() {
             setBillingPeriod(newPeriod);
         }
     };
+
+const pricingTiers = ['Free', 'Standard', 'Premium', 'Enterprise'].map(key => ({
+    title: key,
+    price: {
+        monthly: t(`tiers.${key}.price.monthly`),
+        quarterly: t(`tiers.${key}.price.quarterly`),
+        yearly: t(`tiers.${key}.price.yearly`)
+    },
+    featureTitle: t(`tiers.${key}.featureTitle`),
+    features: t.raw(`tiers.${key}.features`) as string[],
+}));
+
+
     return (
         <Box>
             <Typography sx={{ fontWeight: fonts.weights.bold, fontSize: fonts.sizes.h3, mb: 2, textAlign: 'center' }}>
-                Gói dịch vụ và Bảng giá
+                {t('title')}
             </Typography>
             <Typography sx={{ mb: 4, fontSize: fonts.sizes.md, color: colors.neutral._7, textAlign: 'center' }}>
-                Nhận ưu đãi lớn khi thanh toán theo quý hoặc năm, tiết kiệm chi phí cho gói dịch vụ của bạn.
+                {t('subtitle')}
             </Typography>
             <Box sx={{ display: 'flex', justifyContent: 'center', mb: 5 }}>
                 <ToggleButtonGroup
@@ -174,15 +142,15 @@ export default function PackagesAndPrices() {
                         },
                     }}
                 >
-                    <ToggleButton value="monthly" sx={{ background: neumorphism.card, margin: '0 0 !important' }}>Tháng</ToggleButton>
-                    <ToggleButton value="quarterly" sx={{ background: neumorphism.card, margin: '0 0 !important' }}>Quý</ToggleButton>
-                    <ToggleButton value="yearly" sx={{ background: neumorphism.card, margin: '0 0 !important' }}>Năm</ToggleButton>
+                    <ToggleButton value="monthly" sx={{ background: neumorphism.card, margin: '0 0 !important' }}>{t('billing.monthly')}</ToggleButton>
+                    <ToggleButton value="quarterly" sx={{ background: neumorphism.card, margin: '0 0 !important' }}>{t('billing.quarterly')}</ToggleButton>
+                    <ToggleButton value="yearly" sx={{ background: neumorphism.card, margin: '0 0 !important' }}>{t('billing.yearly')}</ToggleButton>
                 </ToggleButtonGroup>
             </Box>
 
             <Grid container spacing={3} justifyContent="center" alignItems="stretch" px={{ xs: 2, sm: 4, md: 6, lg: 8 }}>
                 {pricingTiers.map((tier, index) => {
-                    const isCalculable = tier.price.monthly !== 'Miễn phí' && tier.price.monthly !== 'Liên hệ';
+                    const isCalculable = tier.title !== 'Free' && tier.title !== 'Enterprise';
                     let originalPriceNum = 0;
                     let discount = 0;
 
@@ -242,7 +210,7 @@ export default function PackagesAndPrices() {
                                         }}
                                     >
                                         <Star sx={{ fontSize: '1rem' }} />
-                                        Phổ biến
+                                        {t('badge')}
                                     </Box>
                                 )}
                                 
@@ -298,7 +266,7 @@ export default function PackagesAndPrices() {
                                             exit="exit"
                                         >
                                             <Typography variant="body2" sx={{ color: '#00a63e', fontWeight: fonts.weights.medium }}>
-                                                {(isCalculable && billingPeriod !== 'monthly' && originalPriceNum > 0) ? (`Tiết kiệm ${discount}%`) : (<span>‎</span>)}
+                                                {(isCalculable && billingPeriod !== 'monthly' && originalPriceNum > 0) ? (`${t('discount')} ${discount}%`) : (<span>‎</span>)}
                                             </Typography>
                                         </motion.div>
                                     </AnimatePresence>

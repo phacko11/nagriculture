@@ -18,7 +18,7 @@ COPY .env.production ./.env.production
 COPY prisma ./prisma/
 
 RUN pnpm install
-RUN pnpm prisma generate   # generate Prisma client with correct binaries
+RUN pnpm prisma generate
 RUN pnpm run build
 
 # copy query engine binary into /tmp

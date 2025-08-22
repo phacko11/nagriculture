@@ -8,7 +8,11 @@
     "FAQs": "FAQs",
     "Company": "Công ty",
     "Social": "Liên hệ",
-    "Pricing": "Gói dịch vụ"
+    "Pricing": "Gói dịch vụ",
+    "Slogan": "Nâng cao hiệu suất đầu tư của bạn",
+    "CTA": "Trải nghiệm miễn phí",
+    "CompanyInfo": "Công ty cổ phần Miquant | MST: 0318906170",
+    "Address": "5A/2 Trần Phú, P. Chợ Quán, TP. Hồ Chí Minh"
   },
   "HomePage": {
     "Headline1": "Kiến tạo lợi thế đầu tư vượt trội",
@@ -30,11 +34,11 @@
     },
     "WhoItsFor": {
       "Headline": "Giải pháp cho nhiều cấp độ đầu tư",
-      "Title1":"Nhà đầu tư cá nhân & Chuyên gia phân tích",
+      "Title1": "Nhà đầu tư cá nhân & Chuyên gia phân tích",
       "Card1": "Nhanh chóng phát hiện cơ hội đầu tư và nhận diện rủi ro thông qua phân tích toàn diện thị trường, tin tức và tâm lý đám đông trên nền tảng dữ liệu đã được kiểm chứng.",
-      "Title2":"Quỹ đầu tư & Tổ chức",
+      "Title2": "Quỹ đầu tư & Tổ chức",
       "Card2": "Tự động hoá quy trình nghiên cứu, tăng cường hiệu suất cho đội ngũ và ra quyết định nhanh hơn, chính xác hơn với mô hình AI độc quyền.",
-      "Title3":"Lập trình viên & Kỹ sư",
+      "Title3": "Lập trình viên & Kỹ sư",
       "Card3": "Xây dựng các ứng dụng tài chính tuỳ chỉnh, tích hợp dữ liệu sạch và đáng tin cậy vào hệ thống của bạn một cách liền mạch."
     },
     "Insight": {
@@ -94,15 +98,22 @@
     "CoreValues": {
       "Headline": "Giá trị tạo nên sự khác biệt",
       "Values": [
-        {"Title":"Phân tích dựa trên nguồn dữ liệu minh bạch",
-          "Desc":"Mọi luận điểm đầu tư phải được xây dựng trên nền tảng dữ liệu đã được kiểm chứng và có thể truy xuất. Chúng tôi tin vào việc loại bỏ yếu tố cảm tính, thay thế mọi phỏng đoán bằng các phân tích có cơ sở, minh bạch và logic."},
-        {"Title":"Xây dựng bởi người hiểu tài chính, dành cho người đầu tư thực chiến",
-          "Desc":"Mục tiêu của Miquant là thu hẹp khoảng cách giữa công cụ phân tích chuyên nghiệp và nhà đầu tư cá nhân. Chúng tôi làm điều đó bằng cách kết hợp chuyên môn tài chính và công nghệ, biến những phương pháp phức tạp thành một nền tảng trực quan và dễ tiếp cận."
+        {
+          "Title": "Phân tích dựa trên nguồn dữ liệu minh bạch",
+          "Desc": "Mọi luận điểm đầu tư phải được xây dựng trên nền tảng dữ liệu đã được kiểm chứng và có thể truy xuất. Chúng tôi tin vào việc loại bỏ yếu tố cảm tính, thay thế mọi phỏng đoán bằng các phân tích có cơ sở, minh bạch và logic."
         },
-        {"Title":"Quyền làm chủ dữ liệu là của bạn",
-          "Desc":"Chúng tôi không bán dữ liệu. Chúng tôi cung cấp công cụ để bạn làm chủ nó. Nền tảng cho phép bạn khai thác và xây dựng góc nhìn đầu tư của riêng mình, từ đó ra quyết định một cách tự chủ—có kiểm soát, có cơ sở và có chiến lược."},
-        {"Title":"Bảo mật, Minh bạch, và Không \"BlackBox\".",
-          "Desc":"Toàn bộ hệ thống được Miquant xây dựng với tiêu chuẩn bảo mật cao nhất và dữ liệu của bạn được tôn trọng tuyệt đối. Quan trọng hơn, mọi thuật toán và mô hình AI đều có thể được kiểm chứng và giải thích, đảm bảo bạn luôn hiểu được \"tại sao\" đằng sau mỗi kết quả."}
+        {
+          "Title": "Xây dựng bởi người hiểu tài chính, dành cho người đầu tư thực chiến",
+          "Desc": "Mục tiêu của Miquant là thu hẹp khoảng cách giữa công cụ phân tích chuyên nghiệp và nhà đầu tư cá nhân. Chúng tôi làm điều đó bằng cách kết hợp chuyên môn tài chính và công nghệ, biến những phương pháp phức tạp thành một nền tảng trực quan và dễ tiếp cận."
+        },
+        {
+          "Title": "Quyền làm chủ dữ liệu là của bạn",
+          "Desc": "Chúng tôi không bán dữ liệu. Chúng tôi cung cấp công cụ để bạn làm chủ nó. Nền tảng cho phép bạn khai thác và xây dựng góc nhìn đầu tư của riêng mình, từ đó ra quyết định một cách tự chủ—có kiểm soát, có cơ sở và có chiến lược."
+        },
+        {
+          "Title": "Bảo mật, Minh bạch, và Không \"BlackBox\".",
+          "Desc": "Toàn bộ hệ thống được Miquant xây dựng với tiêu chuẩn bảo mật cao nhất và dữ liệu của bạn được tôn trọng tuyệt đối. Quan trọng hơn, mọi thuật toán và mô hình AI đều có thể được kiểm chứng và giải thích, đảm bảo bạn luôn hiểu được \"tại sao\" đằng sau mỗi kết quả."
+        }
       ]
     },
     "Mission": "Sứ mệnh của chúng tôi là trao cho thế hệ nhà đầu tư mới sự tự tin để ra quyết định thông minh. Chúng tôi làm điều đó bằng cách xây dựng một công cụ trực quan, dùng sức mạnh của AI và tài chính định lượng để đưa họ đi từ phân tích dữ liệu tự động đến một chiến lược đầu tư minh bạch và mang dấu ấn cá nhân."
@@ -119,5 +130,284 @@
     "FactorReport": "Factor Report",
     "QuantitativeFinance": "Tài chính định lượng",
     "Locale": "vi-VN"
+  },
+  "faqs": [
+    {
+      "summary": "Nền tảng Miquant là gì?",
+      "details": "Nền tảng Miquant là giải pháp tiên tiến kết hợp phân tích định lượng và trí tuệ nhân tạo, cung cấp các công cụ chuyên sâu giúp nhà đầu tư nâng cao khả năng ra quyết định và hiểu rõ thị trường tài chính. Miquant hỗ trợ từ giám sát thị trường cơ bản đến xếp hạng cổ phiếu phức tạp với trợ lý AI thông minh."
+    },
+    {
+      "summary": "Miquant có thể giúp tối ưu quy trình đầu tư của bạn thế nào?",
+      "details": "Nền tảng Miquant được xây dựng để tích hợp linh hoạt vào quy trình đầu tư của bạn. Với khả năng cung cấp thông tin chi tiết, tối ưu hóa chiến lược và đưa ra các khuyến nghị dựa trên AI, Miquant giúp cải thiện và nâng cao cả phương pháp đầu tư truyền thống và định lượng."
+    },
+    {
+      "summary": "Những tính năng giá trị nhất đối với nhà đầu tư là gì?",
+      "details": "Miquant giúp nhà đầu tư theo dõi thị trường dễ dàng hơn nhờ các công cụ phân tích định lượng trực quan, tín hiệu rõ ràng và có cơ sở. Từ tâm lý thị trường, tin tức, sự kiện vĩ mô cho đến dữ liệu tài chính – mọi thứ đều được xử lý bằng AI để bạn không bỏ lỡ cơ hội và kiểm soát rủi ro tốt hơn."
+    },
+    {
+      "summary": "Thuật toán phân bổ danh mục nào đang được Miquant sử dụng?",
+      "details": "Miquant cung cấp các công cụ tối ưu hóa hiệu quả cho việc xây dựng danh mục đầu tư và quản lý rủi ro, từ mô hình phương sai trung bình (MVP) cơ bản đến các thuật toán máy học tiên tiến như Phân bổ rủi ro phân cấp (HRP) và các phương pháp tối ưu hóa phức tạp dựa trên mạng lưới."
+    },
+    {
+      "summary": "Hệ thống AI của Miquant có gì nổi bật và đáng tin cậy?",
+      "details": "Miquant ứng dụng agentic AI và multi-agent AI, với nhiều tác tử chuyên biệt phối hợp phân tích dữ liệu tài chính, tin tức và tâm lý thị trường. Hệ thống tạo ra tín hiệu đầu tư minh bạch, có thể giải thích được, giúp nhà đầu tư ra quyết định nhanh, chính xác và có cơ sở."
+    },
+    {
+      "summary": "Miquant huấn luyện AI dựa trên những kiến thức và thông tin nào?",
+      "details": "AI Agent của Miquant được huấn luyện bằng dữ liệu tài chính chuyên sâu, tin tức thị trường, tâm lý nhà đầu tư và hành vi thực tế từ người dùng. Kết hợp với các thuật toán độc quyền và phân tích định lượng, hệ thống liên tục học hỏi và điều chỉnh để đưa ra gợi ý đầu tư chính xác, sát nhu cầu và dễ ứng dụng trong thực tế."
+    },
+    {
+      "summary": "Hệ thống AI Ranking hoạt động như thế nào?",
+      "details": "Hệ thống AI Ranking của Miquant liên tục thích ứng và phát triển dựa trên dữ liệu đầu vào và khẩu vị của người dùng. Bằng cách học hỏi từ các yếu tố ưu tiên và yêu cầu cụ thể của nhà đầu tư (khẩu vị rủi ro, tái phân bổ danh mục, tối ưu hóa), nền tảng cung cấp các danh mục phù hợp với mục tiêu và chiến lược cá nhân."
+    },
+    {
+      "summary": "Miquant đảm bảo mức độ tin cậy của AI bằng cách nào?",
+      "details": "Miquant đảm bảo độ tin cậy của AI bằng cách áp dụng kiểm tra chéo mô hình, thu thập đánh giá và chấm điểm từ người dùng thực tế, đồng thời áp dụng các lớp lọc dữ liệu nghiêm ngặt trước khi đưa vào huấn luyện. Nhờ đó, hệ thống AI luôn minh bạch, có thể giải thích được và bám sát nhu cầu đầu tư thực tế."
+    }
+  ],
+  "Pricing": {
+    "PackagesAndPrices": {
+      "title": "Gói dịch vụ và Bảng giá",
+      "subtitle": "Nhận ưu đãi lớn khi thanh toán theo quý hoặc năm, tiết kiệm chi phí cho gói dịch vụ của bạn.",
+      "billing": {
+        "monthly": "Tháng",
+        "quarterly": "Quý",
+        "yearly": "Năm"
+      },
+      "tiers": {
+        "Free": {
+          "title": "Free",
+          "price": {
+            "monthly": "Miễn phí",
+            "quarterly": "Miễn phí",
+            "yearly": "Miễn phí"
+          },
+          "featureTitle": "Tính năng chính:",
+          "features": [
+            "Cổ phiếu trong **VN30**",
+            "Thiết kế chiến lược tự động: **03 chiến lược/tháng**",
+            "Báo cáo **Factor** + lọc cổ phiếu",
+            "Miquant AI: **5 lần/ngày**"
+          ]
+        },
+        "Standard": {
+          "title": "Standard",
+          "price": {
+            "monthly": "349.000",
+            "quarterly": "599.000",
+            "yearly": "2.290.000"
+          },
+          "featureTitle": "Bao gồm các tính năng gói Free, cộng thêm:",
+          "features": [
+            "Cổ phiếu trong **HOSE**",
+            "Thiết kế chiến lược tự động: **15 chiến lược/tháng**",
+            "Báo cáo **Miquant Portfolio + Top chiến lược tự động**",
+            "Miquant AI: **30 lần/ngày**",
+            "Chủ đề nổi bật",
+            "Phân tích tâm lý thị trường",
+            "Định giá cổ phiếu tự động"
+          ]
+        },
+        "Premium": {
+          "title": "Premium",
+          "price": {
+            "monthly": "1.889.000",
+            "quarterly": "3.999.000",
+            "yearly": "14.900.000"
+          },
+          "featureTitle": "Bao gồm các tính năng gói Standard, cộng thêm:",
+          "features": [
+            "**Tất cả cổ phiếu**",
+            "**Không giới hạn:** Thiết kế chiến lược tự động",
+            "**Không giới hạn:** Miquant AI",
+            "**Không giới-hạn:** Thiết kế, backtest, theo dõi danh mục"
+          ]
+        },
+        "Enterprise": {
+          "title": "Enterprise",
+          "price": {
+            "monthly": "Liên hệ",
+            "quarterly": "Liên hệ",
+            "yearly": "Liên hệ"
+          },
+          "featureTitle": "Bao gồm tất cả tính năng gói Advanced, cộng thêm:",
+          "features": [
+            "Kết nối **API** để nhận tín hiệu định lượng real time",
+            "Xây dựng **chiến lược định lượng riêng** cho doanh nghiệp"
+          ]
+        }
+      },
+      "discount": "Tiết kiệm",
+      "badge": "Phổ biến",
+      "currencySymbol": "đ"
+    },
+    "Comparison": {
+      "title": "So sánh chi tiết các tính năng",
+      "subtitle": "Xem chi tiết đầy đủ các tính năng có sẵn trong từng gói dịch vụ",
+      "tiers": {
+        "Free": "Miễn phí",
+        "Standard": "Tiêu chuẩn",
+        "Advanced": "Nâng cao"
+      },
+      "table": [
+        {
+          "tab": "Cổ phiếu",
+          "feature": "Tổng quan",
+          "values": [
+            "(VN30)",
+            "(HOSE)",
+            "(Không giới hạn)"
+          ]
+        },
+        {
+          "tab": "",
+          "feature": "Sentiment",
+          "values": [
+            "(VN30)",
+            "(HOSE)",
+            "(Không giới hạn)"
+          ]
+        },
+        {
+          "tab": "",
+          "feature": "Tài chính",
+          "values": [
+            "✓",
+            "✓",
+            "✓"
+          ]
+        },
+        {
+          "tab": "",
+          "feature": "Rủi ro",
+          "values": [
+            "✓",
+            "✓",
+            "✓"
+          ]
+        },
+        {
+          "tab": "Thị trường",
+          "feature": "Tổng quan",
+          "values": [
+            "✓",
+            "✓",
+            "✓"
+          ]
+        },
+        {
+          "tab": "",
+          "feature": "Sentiment",
+          "values": [
+            "",
+            "✓",
+            "✓"
+          ]
+        },
+        {
+          "tab": "",
+          "feature": "Phân tích thị trường",
+          "values": [
+            "",
+            "✓",
+            "✓"
+          ]
+        },
+        {
+          "tab": "Vĩ mô",
+          "feature": "Tổng quan",
+          "values": [
+            "",
+            "✓",
+            "✓"
+          ]
+        },
+        {
+          "tab": "",
+          "feature": "Tăng trưởng kinh tế",
+          "values": [
+            "",
+            "✓",
+            "✓"
+          ]
+        },
+        {
+          "tab": "",
+          "feature": "Tài chính - tiền tệ",
+          "values": [
+            "",
+            "✓",
+            "✓"
+          ]
+        },
+        {
+          "tab": "Nhiệt độ",
+          "feature": "",
+          "values": [
+            "✓",
+            "✓",
+            "✓"
+          ]
+        },
+        {
+          "tab": "Danh mục theo dõi",
+          "feature": "",
+          "values": [
+            "5 danh mục (tối đa 10 stock / danh mục)",
+            "50 danh mục (tối đa 50 stock / danh mục)",
+            "500 danh mục (tối đa 100 stock / danh mục)"
+          ]
+        },
+        {
+          "tab": "AI Ranking",
+          "feature": "",
+          "values": [
+            "3 chiến lược / tháng (VN100 + VN30)",
+            "15 chiến lược / tháng (VN100 + VN30)",
+            "Không giới hạn"
+          ]
+        },
+        {
+          "tab": "Recommendation",
+          "feature": "",
+          "values": [
+            "Factor + Filter thường",
+            "Miquant Port + Top AI Ranking Performance",
+            "Miquant Port + Top AI Ranking Performance"
+          ]
+        },
+        {
+          "tab": "Chatbot",
+          "feature": "",
+          "values": [
+            "5 lần / ngày (Không có Valuation tool)",
+            "30 lần / ngày (Có Valuation tool 5 lần / ngày)",
+            "100 lần / ngày (Có Valuation tool 30 lần / ngày)"
+          ]
+        },
+        {
+          "tab": "Tin tức nổi bật",
+          "feature": "",
+          "values": [
+            "3 tin đầu",
+            "Không giới hạn",
+            "Không giới hạn"
+          ]
+        }
+      ]
+    },
+    "BusinessSection": {
+      "title": "Gói Business – Tính năng đặc biệt",
+      "intro": "Bao gồm tất cả tính năng của gói Advanced, cộng thêm:",
+      "features": [
+        "Kết nối API để nhận tín hiệu định lượng real time",
+        "Xây dựng chiến lược định lượng riêng cho doanh nghiệp"
+      ],
+      "contact": {
+        "text1": "Vui lòng",
+        "text2": "để nhận thông tin chi tiết và hỗ trợ tư vấn thêm.",
+        "linkText": "liên hệ đội ngũ Miquant"
+      }
+    }
   }
 }
