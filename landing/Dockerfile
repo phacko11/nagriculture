@@ -20,4 +20,4 @@ COPY --from=builder /app/package*.json ./
 COPY --from=builder /app/node_modules ./node_modules/
 COPY --from=builder /app/public ./public/
 RUN corepack enable pnpm
-CMD ["pnpm", "start -p 3000"]
+CMD ["pnpm", "start -p 3001"]
