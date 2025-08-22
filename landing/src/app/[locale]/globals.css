@@ -1,0 +1,49 @@
+html {
+    scrollbar-gutter: stable;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    /* background-color: aqua; */
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: clip;
+    /* modern alternative to hidden */
+}
+
+@keyframes shadow-pop {
+
+    0% {
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+    }
+
+    100% {
+        box-shadow: 8px 8px 14px rgba(0, 0, 0, 0.1),
+            -8px -8px 14px rgba(255, 255, 255, 1),
+            inset 0 0 0 1px #eaeaeaff;
+    }
+}
+
+
+/* Initial state (before animation) */
+/* Initial state */
+.neumorphic {
+    opacity: 0;
+    scale: (0.95);
+    /* transform: translateY(25%); */
+    box-shadow: 0 0 2px rgba(0, 0, 0, .25);
+    transition:
+        opacity 600ms ease,
+        transform 700ms ease;
+    /* don't transition box-shadow here */
+}
+
+/* When in view */
+.animated-neumorphism {
+    opacity: 1;
+    /* transform: translateY(0); */
+    animation: shadow-pop 600ms ease forwards;
+    animation-delay: 600ms;
+    /* starts after fade/slide */
+}

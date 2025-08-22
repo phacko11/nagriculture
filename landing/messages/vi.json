@@ -1,0 +1,50 @@
+{
+  "navigate": {
+    "Home":"Trang chủ",
+    "About":"Về chúng tôi",
+    "Research":"Nghiên cứu",
+    "Blog":"Blog",
+    "News":"Tin tức",
+    "FAQs":"FAQs",
+    "Company":"Công ty",
+    "Social":"Liên hệ",
+    "Pricing":"Gói dịch vụ"
+  },
+  "HomePage": {
+    "Kiến tạo lợi thế đầu tư vượt trội": "Kiến tạo lợi thế đầu tư vượt trội",
+    "với nền tảng": "với nền tảng",
+    "AI định lượng": "AI định lượng",
+    "Chuyển hoá dữ liệu thành quyết định nhanh, chính xác, hiệu quả": "Chuyển hoá dữ liệu thành quyết định nhanh, chính xác, hiệu quả",
+    "Chat":{
+    "Biến mọi câu hỏi thành cơ hội đầu tư": "Biến mọi câu hỏi thành cơ hội đầu tư",
+    "Nắm trọn luận điểm sắc bén được chắt lọc từ dữ liệu chính xác": "Nắm trọn luận điểm sắc bén được chắt lọc từ dữ liệu chính xác",
+    "Phân tích dòng tiền và nợ vay của CTCP Hoà Phát (HPG) trong 5 năm gần nhất": "Phân tích dòng tiền và nợ vay của CTCP Hoà Phát (HPG) trong 5 năm gần nhất",
+    "So sánh chỉ số P/E, P/B của nhóm ngành ngân hàng quý này": "So sánh chỉ số P/E, P/B của nhóm ngành ngân hàng quý này",
+    "Phân tích cho tôi dự án RIG PV DRILLING III của PVD": "Phân tích cho tôi dự án RIG PV DRILLING III của PVD",
+    "Phân tích tác động của Tariff lên các doanh nghiệp xuất khẩu của Việt Nam": "Phân tích tác động của Tariff lên các doanh nghiệp xuất khẩu của Việt Nam"
+    }
+  },
+  "AboutPage": {
+    "Giá trị tạo nên sự khác biệt": "Giá trị tạo nên sự khác biệt",
+    "với nền tảng": "với nền tảng",
+    "AI định lượng": "AI định lượng",
+    "Chuyển hoá dữ liệu thành quyết định nhanh, chính xác, hiệu quả": "Chuyển hoá dữ liệu thành quyết định nhanh, chính xác, hiệu quả",
+    "Chat":{
+    "Biến mọi câu hỏi thành cơ hội đầu tư": "Biến mọi câu hỏi thành cơ hội đầu tư",
+    "Nắm trọn luận điểm sắc bén được chắt lọc từ dữ liệu chính xác": "Nắm trọn luận điểm sắc bén được chắt lọc từ dữ liệu chính xác",
+    "Phân tích dòng tiền và nợ vay của CTCP Hoà Phát (HPG) trong 5 năm gần nhất": "Phân tích dòng tiền và nợ vay của CTCP Hoà Phát (HPG) trong 5 năm gần nhất",
+    "So sánh chỉ số P/E, P/B của nhóm ngành ngân hàng quý này": "So sánh chỉ số P/E, P/B của nhóm ngành ngân hàng quý này",
+    "Phân tích cho tôi dự án RIG PV DRILLING III của PVD": "Phân tích cho tôi dự án RIG PV DRILLING III của PVD",
+    "Phân tích tác động của Tariff lên các doanh nghiệp xuất khẩu của Việt Nam": "Phân tích tác động của Tariff lên các doanh nghiệp xuất khẩu của Việt Nam"
+    }
+  },
+  "ResearchPage": {
+    "Nghiên cứu định lượng":"Nghiên cứu định lượng",
+    "Chuyển hoá dữ liệu thành quyết định nhanh, chính xác, hiệu quả":"Chuyển hoá dữ liệu thành quyết định nhanh, chính xác, hiệu quả",
+    "Nhập email của bạn":"Nhập email của bạn",
+    "Cảm ơn bạn đã đăng ký!":"Cảm ơn bạn đã đăng ký!",
+    "Lỗi khi gửi email":"Lỗi khi gửi email. Vui lòng thử lại.",
+    "Lỗi mạng":"Lỗi mạng. Vui lòng thử lại sau.",
+    "Đăng ký":"Đăng ký"
+  }
+}

@@ -1,0 +1,64 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Post {
+  id             Int        @id @default(autoincrement())
+  category       PostCategory         // NEWS, BLOG, RESEARCH
+  title          String               // Unique title for the post
+  description    String?              // Optional description for the post
+  imageUrl       String?              // Optional image URL for the post
+  contentFormat  ContentFormat        // PDF, MARKDOWN
+  createdAt      DateTime    @default(now())
+  updatedAt      DateTime    @updatedAt
+  postUrl        String?     
+  topics         Topic[]     @relation()
+
+  authorId       Int
+  author         AdminUser  @relation(fields: [authorId], references: [id])
+
+  @@index([authorId])
+  @@index([category])
+}
+
+
+
+model Topic {
+  id             Int        @id @default(autoincrement())
+  name           String     @unique
+  baseColor      String
+  post           Post[]     @relation()
+}
+
+enum ContentFormat {
+  PDF
+  MARKDOWN
+}
+
+enum PostCategory {
+  NEWS
+  BLOG
+  RESEARCH
+}
+
+model AdminUser {
+  id          Int      @id @default(autoincrement())
+  name        String
+  email       String   @unique
+  password    String   // Store hashed passwords only
+  createdAt   DateTime @default(now())
+  lastLogin   DateTime?
+  posts       Post[]   @relation()
+}

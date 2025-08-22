@@ -1,0 +1,103 @@
+'use client'
+import Box from '@mui/material/Box'
+import Typography from '@mui/material/Typography'
+import { useTheme } from '@mui/material/styles'
+import React, { useEffect, useState } from 'react'
+import { colors, fonts, neumorphism } from '../../../components/MuiProvider'
+import { CountUp } from "@/components/lightswind/count-up"
+
+export default function StatsSection() {
+    const theme = useTheme()
+    const stats = [
+        {
+            number: '400+',
+            text: 'Cổ phiếu được định giá bởi AI, liên tục hiệu chỉnh theo thị trường',
+        },
+        {
+            number: '1600+',
+            text: 'Cổ phiếu được phân tích và sàng lọc tiềm năng thị trường nội tại',
+        },
+        {
+            number: '1000000+',
+            text: 'Điểm dữ liệu được phân tích mỗi ngày',
+        },
+    ]
+    return (
+        <Box
+            sx={{
+                display: 'flex',
+                flexDirection: 'row', // Row until md, then column
+                justifyContent: { xs: 'center', md: 'space-between' },
+                alignItems: 'center',
+                gap: { xs: 1, md: 3 },
+                p: 2,
+                borderRadius: '16px',
+            }}
+        >
+            {stats.map((item, index) => (
+                <React.Fragment key={index}>
+                    <Box
+                        sx={{
+                            flex: 1,
+                            minWidth: { xs: 'auto', md: 0 },
+                            display: 'flex',
+                            flexDirection: 'column',
+                            justifyContent: { xs: 'center', md: 'space-between' },
+                            gap: 1,
+                            py: { xs: 2, md: 3 },
+                            px: { xs: 0, md: 5 },
+                            alignItems: 'center',
+                            textAlign: 'center',
+                        }}
+                    >
+                        <Typography
+                            component="div"
+                            sx={{
+                                fontWeight: theme.typography.fontWeightBold,
+                                fontSize: { xs: fonts.sizes.lg, md: fonts.sizes.xl },
+                                lineHeight: 1.2,
+                                // color: colors.primary._0,
+                                color: 'transparent',
+                                background: `linear-gradient(45deg, #007FC5, #0066BA)`,
+                                backgroundBlendMode: 'overlay',
+                                WebkitBackgroundClip: 'text',
+                                backgroundClip: 'text',
+                            }}
+                        >
+                            <CountUp duration={0.8} value={parseInt(item.number)} className={undefined} numberClassName={undefined} customColor={undefined} onAnimationComplete={undefined} suffix='+' />
+
+                        </Typography>
+                        <Typography
+                            sx={{
+                                fontWeight: theme.typography.fontWeightRegular,
+                                fontSize: { xs: fonts.sizes.sm, md: fonts.sizes.md },
+                                lineHeight: 1.4,
+                                maxWidth: 280,
+                                color: colors.neutral._9,
+                            }}
+                        >
+                            {item.text}
+                        </Typography>
+                    </Box>
+
+                    {index < stats.length - 1 && (
+                        <Box
+                            sx={{
+                                display: 'flex', // Always show on all sizes
+                                alignItems: 'center',
+                                mx: 1,
+                                height: { xs: '100px', md: '150px' }, // Shorter on mobile
+                                background: neumorphism.card,
+                                width: '10px',
+                                borderRadius: '50%',
+                                boxShadow:
+                                    '4px 4px 6px rgba(0, 0, 0, 0.1), -4px -4px 6px rgba(255, 255, 255, 1)',
+                            }}
+                        />
+                    )}
+                </React.Fragment>
+            ))}
+        </Box>
+
+    )
+}
