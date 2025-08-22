@@ -16,7 +16,7 @@
     "Headline3": "AI định lượng",
     "SubHeadline": "Chuyển hoá dữ liệu thành quyết định nhanh, chính xác, hiệu quả",
     "CTA": "Khám phá ngay",
-    "Partner": "Đối tác đồng hành cùng các tổ chức",
+    "Partner": "Là thành viên của",
     "Chat": {
       "Headline": "Biến mọi câu hỏi thành cơ hội đầu tư",
       "SubHeadline": "Nắm trọn luận điểm sắc bén được chắt lọc từ dữ liệu chính xác",
@@ -106,5 +106,18 @@
       ]
     },
     "Mission": "Sứ mệnh của chúng tôi là trao cho thế hệ nhà đầu tư mới sự tự tin để ra quyết định thông minh. Chúng tôi làm điều đó bằng cách xây dựng một công cụ trực quan, dùng sức mạnh của AI và tài chính định lượng để đưa họ đi từ phân tích dữ liệu tự động đến một chiến lược đầu tư minh bạch và mang dấu ấn cá nhân."
+  },
+  "BlogPage": {
+    "All": "Tất cả blog",
+    "Recent": "Blog gần đây"
+  },
+  "NewsPage": {
+    "All": "Tất cả tin tức",
+    "Recent": "Tin tức gần đây"
+  },
+  "ResearchPage": {
+    "FactorReport": "Factor Report",
+    "QuantitativeFinance": "Tài chính định lượng",
+    "Locale": "vi-VN"
   }
 }

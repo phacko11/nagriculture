@@ -10,6 +10,7 @@ import NewsCard from '../../components/PostCard';
 import MainResearches from '../../components/MainPostCards';
 import AllResearches from '../../components/AllPostCards';
 import { useEffect, useState } from "react";
+import { useTranslations } from 'next-intl';
 
 type Topic = {
     name: string;
@@ -35,6 +36,7 @@ type ResearchPost = {
     topics: Topic[];
 };
 export default function News() {
+    const t = useTranslations('NewsPage');
     const [news, setNews] = useState<ResearchPost[]>([]);
 
     useEffect(() => {
@@ -67,8 +69,8 @@ export default function News() {
             gap: 10,
             paddingTop: 15,
         }}>
-            <MainResearches researches={news} text='Tin tức mới nhất' />
-            <AllResearches researches={news} text='Tất cả tin tức'/>
+            <MainResearches researches={news} text={t('Recent')} />
+            <AllResearches researches={news} text={t('All')} />
         </Box>
     )
 }

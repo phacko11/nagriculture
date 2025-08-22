@@ -2,7 +2,9 @@ import Box from "@mui/material/Box"
 import SectionTitle from "./SectionTitle"
 import Typography from "@mui/material/Typography"
 import { fonts } from "@/app/components/MuiProvider"
+import { useTranslations } from "next-intl"
 export default function MemberOf() {
+    const t = useTranslations('HomePage')
     return (
         <Box
             sx={{
@@ -21,7 +23,7 @@ export default function MemberOf() {
                 fontWeight: fonts.weights.semiBold,
                 fontSize: fonts.sizes.lg,
             }}>
-            Là thành viên của
+            {t('Partner')}
             </Typography>
             <Box
                 sx={{

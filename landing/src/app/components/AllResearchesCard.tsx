@@ -3,6 +3,7 @@ import { useState, useMemo, useEffect, useRef } from "react";
 import { ExpandMore, ArrowForwardIos, ChevronLeft } from "@mui/icons-material";
 import NewsCard from "./PostCard";
 import { fonts, neumorphism } from "./MuiProvider";
+import { useTranslations } from "next-intl";
 
 type ResearchGroup = {
     month: string;
@@ -10,6 +11,7 @@ type ResearchGroup = {
 };
 
 export default function AllResearchesCard({ researches, text }) {
+    const t = useTranslations('ResearchPage');
     const sectionRef = useRef<HTMLDivElement | null>(null);
 
     const groupedResearches = useMemo(() => {
@@ -17,7 +19,7 @@ export default function AllResearchesCard({ researches, text }) {
 
         const grouped = researches.reduce((acc, post) => {
             const date = new Date(post.createdAt);
-            let monthYearKey = date.toLocaleString("vi-VN", {
+            let monthYearKey = date.toLocaleString(t('Locale'), {
                 month: "long",
                 year: "numeric",
                 timeZone: "UTC",

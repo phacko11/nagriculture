@@ -13,6 +13,7 @@ import MainResearches from '../../components/MainPostCards';
 import AllPosts from '../../components/AllPostCards'; 
 import AllResearchesCard from '../../components/AllResearchesCard'; 
 import { useEffect, useState, useMemo } from "react"; // <-- Import useMemo
+import { useTranslations } from 'next-intl';
 
 type Topic = {
     name: string;
@@ -39,6 +40,7 @@ type ResearchPost = {
 };
 
 export default function ResearchPage() {
+    const t = useTranslations('ResearchPage')
     const [researches, setResearches] = useState<ResearchPost[]>([]);
 
     useEffect(() => {
@@ -94,7 +96,7 @@ export default function ResearchPage() {
             {factorReportResearches.length > 0 && (
                 <AllResearchesCard 
                     researches={factorReportResearches} 
-                    text='Factor Report'
+                    text={t('FactorReport')}
                 />
             )}
 
@@ -102,7 +104,7 @@ export default function ResearchPage() {
             {financialResearches.length > 0 && (
                 <AllPosts 
                     researches={financialResearches} 
-                    text='Tài chính định lượng'
+                    text={t('QuantitativeFinance')}
                 />
             )}
             {/* --- END MODIFIED SECTION --- */}

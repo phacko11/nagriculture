@@ -147,7 +147,6 @@ export default function PackagesAndPrices() {
                         borderRadius: '50px',
                         p: { xs: 0.3, sm: 0.5 },
                         gap: { xs: 0.5, sm: 1 },
-                        my: 2,
                         border: '1px solid #d0d0d0',
                         "& .MuiToggleButtonGroup-grouped": {
                             border: 'none',

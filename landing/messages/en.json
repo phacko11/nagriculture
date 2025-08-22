@@ -16,6 +16,7 @@
     "Headline3": "AI-Driven Quantitative Insights",
     "SubHeadline": "Decoding data, unlocking hidden investment potential",
     "CTA": "Start Free",
+    "Partner": "Backed by",
     "Chat": {
       "Headline": "Turn every question into an investment opportunity",
       "SubHeadline": "Access sharp, data-backed insights distilled into clear takeaways",
@@ -105,5 +106,18 @@
       ]
     },
     "Mission": "Our mission is to empower the next generation of investors with the confidence to make smarter decisions. We achieve this by building intuitive tools that combine the power of AI and quantitative finance - helping investors move from automated data analysis to transparent, personalized strategies."
+  },
+  "BlogPage": {
+    "All": "All blogs",
+    "Recent": "Recent blogs"
+  },
+  "NewsPage": {
+    "All": "All news",
+    "Recent": "Recent news"
+  },
+  "ResearchPage": {
+    "FactorReport": "Factor Report",
+    "QuantitativeFinance": "Quantitative Finance",
+    "Locale": "en-US"
   }
 }
