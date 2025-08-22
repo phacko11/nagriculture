@@ -5,21 +5,23 @@ import { useTheme } from '@mui/material/styles'
 import React, { useEffect, useState } from 'react'
 import { colors, fonts, neumorphism } from '../../../components/MuiProvider'
 import { CountUp } from "@/components/lightswind/count-up"
+import { useTranslations } from 'next-intl'
 
 export default function StatsSection() {
+    const t = useTranslations('AboutPage');
     const theme = useTheme()
     const stats = [
         {
             number: '400+',
-            text: 'Cổ phiếu được định giá bởi AI, liên tục hiệu chỉnh theo thị trường',
+            text: t('Highlights.0'),
         },
         {
             number: '1600+',
-            text: 'Cổ phiếu được phân tích và sàng lọc tiềm năng thị trường nội tại',
+            text: t('Highlights.1'),
         },
         {
             number: '1000000+',
-            text: 'Điểm dữ liệu được phân tích mỗi ngày',
+            text: t('Highlights.2'),
         },
     ]
     return (

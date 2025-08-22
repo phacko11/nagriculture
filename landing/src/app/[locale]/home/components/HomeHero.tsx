@@ -79,9 +79,9 @@ export default function HomeHero() {
                             position: 'relative',
                         }}
                     >
-                        {t('Kiến tạo lợi thế đầu tư vượt trội')}
+                        {t('Headline1')}
                         <br />
-                        {t('với nền tảng')}{' '}
+                        {t('Headline2')}{' '}
                         <Box
                             component="span"
                             sx={{
@@ -105,7 +105,7 @@ export default function HomeHero() {
                                     filter: 'blur(2px)', // Soften the shadow
                                 }}
                             >
-                                {t('AI định lượng')}
+                                {t('Headline3')}
                             </Box>
 
                             {/* Main Text Layer (with gradient) */}
@@ -121,7 +121,7 @@ export default function HomeHero() {
                                     // No textShadow needed here anymore
                                 }}
                             >
-                                {t('AI định lượng')}
+                                {t('Headline3')}
                             </Box>
                         </Box>
                     </Typography>
@@ -140,7 +140,7 @@ export default function HomeHero() {
                             maxWidth: '800px', // Constrain line length for readability
                             px: { xs: 2, sm: 0 }
                         }}>
-                        Chuyển hoá dữ liệu thành quyết định nhanh, chính xác, hiệu quả
+                        {t('SubHeadline')}
                     </Typography>
                     <>
                         <GlobalStyles styles={animationStyles} />
@@ -195,7 +195,7 @@ export default function HomeHero() {
                                         fontSize: { xs: fonts.sizes.md, sm: fonts.sizes.lg },
                                     }}
                                 >
-                                    Khám phá ngay
+                                    {t('CTA')}
                                 </Typography>
                             </Box>
                         </Box>

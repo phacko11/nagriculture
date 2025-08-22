@@ -9,7 +9,9 @@ import StatsSection from './components/StatsSection'
 import AboutSection1 from './components/AboutSection1'
 import AboutSection2 from './components/AboutSection2'
 import ValueProposition from './components/ValueProposition'
+import { useTranslations } from 'next-intl'
 export default function AboutPage() {
+    const t = useTranslations('AboutPage');
 
     return (
         <Box
@@ -85,7 +87,7 @@ export default function AboutPage() {
                                 color: colors.neutral._8,
                             }}
                         >
-                            “Sứ mệnh của chúng tôi là trao cho thế hệ nhà đầu tư mới sự tự tin để ra quyết định thông minh. Chúng tôi làm điều đó bằng cách xây dựng một công cụ trực quan, dùng sức mạnh của AI và tài chính định lượng để đưa họ đi từ phân tích dữ liệu tự động đến một chiến lược đầu tư minh bạch và mang dấu ấn cá nhân.”
+                            {t('Mission')}
                         </Typography>
                         <Box>
                             <Typography

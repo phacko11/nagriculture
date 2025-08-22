@@ -27,12 +27,8 @@ export default function Chat() {
     const t = useTranslations('HomePage.Chat');
 
     // Suggestions array as before
-    const suggestions = [
-        t('Phân tích dòng tiền và nợ vay của CTCP Hoà Phát (HPG) trong 5 năm gần nhất'),
-        t('So sánh chỉ số P/E, P/B của nhóm ngành ngân hàng quý này'),
-        t('Phân tích cho tôi dự án RIG PV DRILLING III của PVD'),
-        t('Phân tích tác động của Tariff lên các doanh nghiệp xuất khẩu của Việt Nam')
-    ];
+    const suggestions = t.raw('Questions') as string[];
+
 
     return (
         <Box
@@ -49,10 +45,10 @@ export default function Chat() {
             <Container maxWidth="md">
                 <Box textAlign="center" mb={5}>
                     <Typography variant="h3" component="h1" fontWeight="700">
-                        {t('Biến mọi câu hỏi thành cơ hội đầu tư')}
+                        {t('Headline')}
                     </Typography>
                     <Typography variant="h6" color="text.secondary" mt={1}>
-                        {t('Nắm trọn luận điểm sắc bén được chắt lọc từ dữ liệu chính xác')}
+                        {t('SubHeadline')}
                     </Typography>
                 </Box>
                 <Stack spacing={1.5}>
@@ -112,7 +108,7 @@ export default function Chat() {
                 >
                     <TextField
                         fullWidth
-                        placeholder="Đặt câu hỏi tại đây..."
+                        placeholder={t('Placeholder')}
                         multiline
                         onKeyDown={(event)=>{
                             if (event.key === 'Enter' && !event.shiftKey) {

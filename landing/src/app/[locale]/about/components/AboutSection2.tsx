@@ -4,19 +4,27 @@ import Box from '@mui/material/Box';
 import Divider from '@mui/material/Divider';
 import { fonts, neumorphism } from '../../../components/MuiProvider';
 import { colors } from '../../../components/MuiProvider';
+import { useTranslations } from 'next-intl';
 
 
 export default function AboutSection2() {
+    const t = useTranslations('AboutPage');
     const aboutSections = [
         {
-            title: 'Đồng hành cùng nhà đầu tư trên hành trình hiểu rõ nội tại doanh nghiệp',
-            text: 'Giữa biển dữ liệu nhiễu loạn và rời rạc, chúng tôi tin rằng nhiệm vụ của mình không phải là cung cấp thêm thông tin, mà là tìm ra tín hiệu. Bằng cách kết hợp tư duy tài chính định lượng và AI, chúng tôi biến sự phức tạp đó thành những luận điểm đầu tư rõ ràng, với một niềm tin rằng: khi tín hiệu được làm rõ, mọi nhà đầu tư đều có thể tự tin ra quyết định tốt hơn.',
+            title: t('Vision.Headline1'),
+            text: t('Vision.Body1'),
+            image: '/assets/pexels-pixabay-373543.jpg',
+            reverse: true, // image right
+        },
+        {
+            title: t('Vision.Headline2'),
+            text: t('Vision.Body2'),
             image: '/assets/pexels-photo-30572289.jpeg',
             reverse: false, // image right
         },
         {
-            title: 'Nền tảng bắt đầu từ con người và dữ liệu',
-            text: 'Chúng tôi là một đội ngũ trẻ có chung niềm đam mê dành cho toán học, dữ liệu và tài chính. Chính niềm đam mê này là động lực để chúng tôi kiên trì áp dụng công nghệ, biến những phân tích phức tạp thành các công cụ đầu tư trực quan và gần gũi. Mỗi tính năng đều được xây dựng với sự tỉ mỉ, nhằm mang lại giá trị thực tế và sát nhất với nhu cầu của nhà đầu tư Việt.',
+            title: t('Vision.Headline3'),
+            text: t('Vision.Body3'),
             image: '/assets/pexels-photo-3184639.jpeg',
             reverse: true, // image left
         },

@@ -3,6 +3,7 @@ import { Tabs, Tab, Box, Typography } from '@mui/material';
 import Grid from '@mui/material/Grid';
 import { colors, fonts, neumorphism } from '../../../components/MuiProvider';
 import MUIShinyText from './ShinyText';
+import { useTranslations } from 'next-intl';
 
 function CustomTabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -29,21 +30,21 @@ function a11yProps(index) {
 // Tab data array
 const tabsData = [
     {
-        label: "Tài chính doanh nghiệp",
-        description1: "Soi chiếu sức khỏe tài chính của doanh nghiệp",
-        description2: "Nền tảng tự động bóc tách báo cáo tài chính, giúp bạn nhận diện các điểm sáng trong kinh doanh và phát hiện sớm các rủi ro tiềm ẩn về dòng tiền hay vay nợ, làm rõ bức tranh toàn cảnh ẩn sau các con số",
+        label: "CorporateFinance.Title",
+        description1: "CorporateFinance.SubTitle",
+        description2: "CorporateFinance.Desc",
         img: '/assets/SK tai chinh.png'
     },
     {
-        label: "Tâm lý thị trường",
-        description1: "Lắng nghe nhịp đập thị trường",
-        description2: "Nền tảng tổng hợp và phân tích dữ liệu từ các nguồn uy tín như tin tức, diễn đàn và cộng đồng chuyên gia. Thuật toán của Miquant sẽ xử lý và lượng hoá mức độ đồng thuận của thị trường, giúp bạn sớm nhận diện rủi ro tâm lý đám đông, nắm bắt dòng tiền, và ra quyết định với hiệu suất tốt hơn.",
+        label: "MarketSentiment.Title",
+        description1: "MarketSentiment.SubTitle",
+        description2: "MarketSentiment.Desc",
         img: '/assets/Sentiment.png'
     },
     {
-        label: "Sự kiện kinh tế",
-        description1: "Tiên phong trước những biến đổi vĩ mô",
-        description2: "Nền tảng giúp bạn kết nối với các quyết định về chính sách và chỉ số kinh tế (CPI, GDP, lãi suất) với danh mục đầu tư của chính bạn. Chủ động điều chỉnh chiến lược để đón đầu cơ hội hoặc phòng ngừa rủi ro, thay vì bị động trước những con sóng lớn của thị trường.",
+        label: "EconomicEvents.Title",
+        description1: "EconomicEvents.SubTitle",
+        description2: "EconomicEvents.Desc",
         img: '/assets/SK tai chinh.png'
     }
 ];
@@ -51,18 +52,18 @@ const tabsData = [
 export default function Insight() {
     const [value, setValue] = React.useState(0);
     const handleChange = (event, newValue) => setValue(newValue);
-
+    const t = useTranslations('HomePage.Insight');
     return (
         <Box sx={{ width: '100%', bgcolor: neumorphism.card, py: 6, boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.15), 0px -4px 6px rgba(255, 255, 255, 1)' }}>
             <Typography variant="h4" component="h2" align="center" fontWeight="bold" gutterBottom>
-                Phân tích đa chiều
+                {t('Headline')}
             </Typography>
 
             <Box sx={{ display: 'flex', justifyContent: 'center' }}>
                 <Tabs
                     value={value}
                     onChange={handleChange}
-                    aria-label="Phân tích đa chiều"
+                    aria-label="Headline"
                     variant="scrollable"
                     scrollButtons="auto"
                     sx={{
@@ -87,7 +88,7 @@ export default function Insight() {
                     {tabsData.map((tab, index) => (
                         <Tab
                             key={index}
-                            label={tab.label}
+                            label={t(tab.label)}
                             {...a11yProps(index)}
                             disableRipple
                             sx={{
@@ -180,10 +181,10 @@ export default function Insight() {
                             justifyContent: 'space-between',
                         }}>
                             <Typography sx={{ color: colors.neutral._9, fontSize: fonts.sizes.md, lineHeight: 1.8, fontWeight: fonts.weights.medium }}>
-                                {tab.description1}
+                                {t(tab.description1)}
                             </Typography>
                             <Typography sx={{ color: colors.neutral._8, fontSize: fonts.sizes.md, lineHeight: 1.8 }}>
-                                {tab.description2}
+                                {t(tab.description2)}
                             </Typography>
                         </Grid>
                     </Grid>

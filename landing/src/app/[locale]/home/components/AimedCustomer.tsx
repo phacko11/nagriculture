@@ -1,29 +1,31 @@
 import { colors, neumorphism } from "@/app/components/MuiProvider";
 import { Box, Button, Grid, Typography, Container } from "@mui/material";
 import SectionTitle from "./SectionTitle";
+import { useTranslations } from 'next-intl';
 
 const cardData = [
     {
-        title: 'Nhà đầu tư & Chuyên gia',
+        title: 'Title1',
         subtitle: 'Phát hiện cơ hội và rủi ro',
-        description: "Nhanh chóng phát hiện cơ hội đầu tư và nhận diện rủi ro thông qua phân tích toàn diện thị trường, tin tức và tâm lý đám đông trên nền tảng dữ liệu đã được kiểm chứng.",
+        description: "Card1",
         imgSrc: '/assets/pexels-photo-5816299.jpeg'
     },
     {
-        title: 'Quỹ đầu tư & Tổ chức',
+        title: 'Title2',
         subtitle: 'Tự động hoá và nâng cao hiệu suất',
-        description: "Tự động hoá quy trình nghiên cứu, tăng cường hiệu suất cho đội ngũ và ra quyết định nhanh hơn, chính xác hơn với mô hình AI độc quyền.",
+        description: "Card2",
         imgSrc: '/assets/pexels-photo-7459470.jpeg'
     },
     {
-        title: 'Lập trình viên & Kỹ sư',
+        title: 'Title3',
         subtitle: 'Xây dựng và tích hợp dữ liệu',
-        description: "Xây dựng các ứng dụng tài chính tuỳ chỉnh, tích hợp dữ liệu sạch và đáng tin cậy vào hệ thống của bạn một cách liền mạch.",
+        description: "Card3",
         imgSrc: '/assets/pexels-divinetechygirl-1181271.jpg'
     }
 ];
 
 export default function AimedCustomer() {
+    const t = useTranslations('HomePage.WhoItsFor');
     return (
         <Container
             maxWidth={false}
@@ -36,7 +38,7 @@ export default function AimedCustomer() {
                 px: 2,
             }}
         >
-            <SectionTitle text="Công cụ đa vai trò dành cho mọi nhà đầu tư" />
+            <SectionTitle text={t('Headline')} />
             <Box
                 sx={{
                     display: 'flex',
@@ -79,14 +81,15 @@ export default function AimedCustomer() {
                                     p: 2, 
                                     position: 'relative', // Use relative to be part of the flex flow
                                     zIndex: 10,
+                                    height: '4rem'
                                 }}
                             >
                                 <Typography variant="h5" component="h2" fontWeight="bold" color={colors.neutral._9} align="center">
-                                    {card.title}
+                                    {t(card.title)}
                                 </Typography>
-                                <Typography variant="body2" color={colors.neutral._9} align="center">
+                                {/* <Typography variant="body2" color={colors.neutral._9} align="center">
                                     {card.subtitle}
-                                </Typography>
+                                </Typography> */}
                             </Box>
                         <Box
                             sx={{
@@ -139,7 +142,7 @@ export default function AimedCustomer() {
                                 }}
                             >
                                 <Typography variant="body1" color="white" align="center">
-                                    {card.description}
+                                    {t(card.description)}
                                 </Typography>
                             </Box>
                         </Box>

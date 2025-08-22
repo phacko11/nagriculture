@@ -8,27 +8,23 @@ import SectionTitle from '../../home/components/SectionTitle';
 import { useTranslations } from 'next-intl';
 
 export default function ValueProposition() {
-    const t = useTranslations('AboutPage');
+    const t = useTranslations('AboutPage.CoreValues');
     const gridData = [
         {
-            title: 'Phân tích dựa trên nguồn dữ liệu minh bạch',
-            description:
-                'Mọi luận điểm đầu tư phải được xây dựng trên nền tảng dữ liệu đã được kiểm chứng và có thể truy xuất. Chúng tôi tin vào việc loại bỏ yếu tố cảm tính, thay thế mọi phỏng đoán bằng các phân tích có cơ sở, minh bạch và logic.',
+            title: t('Values.0.Title'),
+            description: t('Values.0.Desc'),
         },
         {
-            title: 'Xây dựng bởi người hiểu tài chính, dành cho người đầu tư thực chiến',
-            description:
-                'Mục tiêu của Miquant là thu hẹp khoảng cách giữa công cụ phân tích chuyên nghiệp và nhà đầu tư cá nhân. Chúng tôi làm điều đó bằng cách kết hợp chuyên môn tài chính và công nghệ, biến những phương pháp phức tạp thành một nền tảng trực quan và dễ tiếp cận.',
+            title: t('Values.1.Title'),
+            description: t('Values.1.Desc'),
         },
         {
-            title: 'Quyền làm chủ dữ liệu là của bạn',
-            description:
-                'Chúng tôi không bán dữ liệu. Chúng tôi cung cấp công cụ để bạn làm chủ nó. Nền tảng cho phép bạn khai thác và xây dựng góc nhìn đầu tư của riêng mình, từ đó ra quyết định một cách tự chủ—có kiểm soát, có cơ sở và có chiến lược.',
+            title: t('Values.2.Title'),
+            description: t('Values.2.Desc'),
         },
         {
-            title: 'Bảo mật, Minh bạch, và Không "BlackBox"',
-            description:
-                'Toàn bộ hệ thống được Miquant xây dựng với tiêu chuẩn bảo mật cao nhất và dữ liệu của bạn được tôn trọng tuyệt đối. Quan trọng hơn, mọi thuật toán và mô hình AI đều có thể được kiểm chứng và giải thích, đảm bảo bạn luôn hiểu được "tại sao" đằng sau mỗi kết quả.',
+            title: t('Values.3.Title'),
+            description: t('Values.3.Desc'),
         },
     ];
 
@@ -42,9 +38,9 @@ export default function ValueProposition() {
                 alignItems: 'center',
             }}
         >
-            <SectionTitle text={t('Giá trị tạo nên sự khác biệt')} />
+            <SectionTitle text={t('Headline')} />
 
-            <Grid
+            <Grid   
                 container
                 rowSpacing={{ xs: 2, sm: 2 }}
                 columnSpacing={{ xs: 2, sm: 2 }}
