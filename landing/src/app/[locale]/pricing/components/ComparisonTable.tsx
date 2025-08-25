@@ -28,10 +28,10 @@ export default function ComparisonTable() {// Data rows (grouped by tab/section)
     return (
         <Box sx={{ py: 8, px: 4}}>
             <Typography variant="h4" align="center" fontWeight="bold" gutterBottom>
-                So sánh chi tiết các tính năng
+                {t('title')}
             </Typography>
             <Typography align="center" sx={{ mb: 4, color: 'text.secondary' }}>
-                Xem chi tiết đầy đủ các tính năng có sẵn trong từng gói dịch vụ
+                {t('subtitle')}
             </Typography>
 
             <TableContainer className='neumorphic' component={Paper} elevation={0} sx={{ borderRadius: 3, p:2, overflow: 'hidden', background: neumorphism.card, boxSizing: 'border-box' , width: '100%' }}>

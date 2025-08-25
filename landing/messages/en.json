@@ -127,6 +127,13 @@
     "Recent": "Recent news"
   },
   "ResearchPage": {
+    "Title":"Quantitative Research",
+    "Subtitle": "Subscribe to receive the latest research reports",
+    "EmailInput":"Input your email...",
+    "Subscribe":"Subscribe",
+    "Success":"Thank you for subscribing!",
+    "EmailError":"Error sending email",
+    "NetworkError":"NetworkError. Please try again later",
     "FactorReport": "Factor Report",
     "QuantitativeFinance": "Quantitative Finance",
     "Locale": "en-US"

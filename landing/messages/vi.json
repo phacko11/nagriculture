@@ -127,6 +127,13 @@
     "Recent": "Tin tức gần đây"
   },
   "ResearchPage": {
+    "Title":"Nghiên cứu định lượng",
+    "Subtitle": "Đăng ký để nhận báo cáo nghiên cứu mới nhất",
+    "EmailInput":"Nhập email của bạn...",
+    "Subscribe":"Đăng ký",
+    "Success":"Cảm ơn bạn đã đăng ký!",
+    "EmailError":"Lỗi khi gửi email",
+    "NetworkError":"Lỗi mạng. Vui lòng thử lại sau",
     "FactorReport": "Factor Report",
     "QuantitativeFinance": "Tài chính định lượng",
     "Locale": "vi-VN"

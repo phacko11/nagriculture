@@ -29,7 +29,7 @@ export default function ResearchHero() {
         if (!email || !email.includes("@")) {
             setSnackbar({
                 open: true,
-                message: t('emailInvalid') || "Hãy nhập địa chỉ email hợp lệ.",
+                message: t('emailInvalid'),
                 severity: "error",
             });
             return;
@@ -48,14 +48,14 @@ export default function ResearchHero() {
             if (data === "Success") {
                 setSnackbar({
                     open: true,
-                    message: t('Cảm ơn bạn đã đăng ký!'),
+                    message: t('Success'),
                     severity: "success",
                 });
                 setEmail("");
             } else {
                 setSnackbar({
                     open: true,
-                    message: t('Lỗi khi gửi email'),
+                    message: t('EmailError'),
                     severity: "error",
                 });
             }
@@ -63,7 +63,7 @@ export default function ResearchHero() {
             console.error("Error submitting form:", error);
             setSnackbar({
                 open: true,
-                message: t('Lỗi mạng') || "Lỗi mạng. Vui lòng thử lại sau.",
+                message: t('NetworkError'),
                 severity: "error",
             });
         } finally {
@@ -111,7 +111,7 @@ export default function ResearchHero() {
                         color: colors.neutral._9,
                     }}
                 >
-                    {t('Nghiên cứu định lượng')}
+                    {t('Title')}
                 </Typography>
                 <Typography
                     sx={{
@@ -123,87 +123,87 @@ export default function ResearchHero() {
                         },
                         color: colors.neutral._8
                     }}>
-                    {t('Chuyển hoá dữ liệu thành quyết định nhanh, chính xác, hiệu quả')}
+                    {t('Subtitle')}
                 </Typography>
             </Box>
 
             {/* 3. The new email subscription form */}
             <Box sx={{ width: "100%", maxWidth: "600px", mx: "auto", p: 2 }}>
-<Box
-    component="form" // This is your form element
-    onSubmit={handleSubmit} // This handler is triggered by Enter key or button click
-    sx={{
-        backgroundColor: colors.neutral._8,
-        borderRadius: "16px",
-        p: { xs: 1, sm: 1.5 },
-        pl: { xs: 2, sm: 3 },
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "space-between",
-        flexWrap: "nowrap",
-        gap: 2,
-        boxShadow: '4px 4px 12px rgba(0, 0, 0, 0.25), -4px -4px 12px rgba(255, 255, 255, 1)',
-    }}
->
-    <MailOutlineRounded sx={{ color: "white", fontSize: 24, flexShrink: 0 }} />
-    <TextField
-        fullWidth
-        variant="standard"
-        type="email"
-        placeholder={t('Nhập email của bạn') || "Nhập email của bạn..."}
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        // The onKeyDown handler has been removed from here
-        disabled={isSubmitting}
-        InputProps={{
-            disableUnderline: true,
-            sx: {
-                color: colors.neutral._0,
-                fontSize: { xs: '0.9rem', sm: '1rem' },
-                backgroundColor: colors.neutral._8,
-                "&:hover": {
-                    backgroundColor: colors.neutral._8,
-                },
-                "&.Mui-focused": {
-                    backgroundColor: colors.neutral._8,
-                },
-            },
-        }}
-        sx={{
-            "& .MuiInputBase-input::placeholder": {
-                color: colors.neutral._3,
-                opacity: 1,
-            },
-        }}
-    />
+                <Box
+                    component="form" // This is your form element
+                    onSubmit={handleSubmit} // This handler is triggered by Enter key or button click
+                    sx={{
+                        backgroundColor: colors.neutral._8,
+                        borderRadius: "16px",
+                        p: { xs: 1, sm: 1.5 },
+                        pl: { xs: 2, sm: 3 },
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "space-between",
+                        flexWrap: "nowrap",
+                        gap: 2,
+                        boxShadow: '4px 4px 12px rgba(0, 0, 0, 0.25), -4px -4px 12px rgba(255, 255, 255, 1)',
+                    }}
+                >
+                    <MailOutlineRounded sx={{ color: "white", fontSize: 24, flexShrink: 0 }} />
+                    <TextField
+                        fullWidth
+                        variant="standard"
+                        type="email"
+                        placeholder={t('EmailInput')}
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        // The onKeyDown handler has been removed from here
+                        disabled={isSubmitting}
+                        InputProps={{
+                            disableUnderline: true,
+                            sx: {
+                                color: colors.neutral._0,
+                                fontSize: { xs: '0.9rem', sm: '1rem' },
+                                backgroundColor: colors.neutral._8,
+                                "&:hover": {
+                                    backgroundColor: colors.neutral._8,
+                                },
+                                "&.Mui-focused": {
+                                    backgroundColor: colors.neutral._8,
+                                },
+                            },
+                        }}
+                        sx={{
+                            "& .MuiInputBase-input::placeholder": {
+                                color: colors.neutral._3,
+                                opacity: 1,
+                            },
+                        }}
+                    />
 
-    <Button
-        type="submit"
-        variant="contained"
-        disabled={isSubmitting}
-        sx={{
-            backgroundColor: colors.neutral._0,
-            color: colors.neutral._10,
-            borderRadius: '12px',
-            px: { xs: 2, sm: 3 },
-            py: 1,
-            fontSize: { xs: '0.8rem', sm: '0.9rem' },
-            fontWeight: fonts.weights.regular,
-            textTransform: "none",
-            boxShadow: "none",
-            whiteSpace: 'nowrap',
-            "&:hover": {
-                backgroundColor: "#f5f5f5",
-                boxShadow: "none",
-            },
-            "&.Mui-disabled": {
-                backgroundColor: colors.neutral._3,
-            }
-        }}
-    >
-        {isSubmitting ? <CircularProgress size={24} sx={{ color: 'white' }} /> : t('Đăng ký') || 'Đăng ký'}
-    </Button>
-</Box>
+                    <Button
+                        type="submit"
+                        variant="contained"
+                        disabled={isSubmitting}
+                        sx={{
+                            backgroundColor: colors.neutral._0,
+                            color: colors.neutral._10,
+                            borderRadius: '12px',
+                            px: { xs: 2, sm: 3 },
+                            py: 1,
+                            fontSize: { xs: '0.8rem', sm: '0.9rem' },
+                            fontWeight: fonts.weights.regular,
+                            textTransform: "none",
+                            boxShadow: "none",
+                            whiteSpace: 'nowrap',
+                            "&:hover": {
+                                backgroundColor: "#f5f5f5",
+                                boxShadow: "none",
+                            },
+                            "&.Mui-disabled": {
+                                backgroundColor: colors.neutral._3,
+                            }
+                        }}
+                    >
+                        {isSubmitting ? <CircularProgress size={24} sx={{ color: 'white' }} /> : t('Subscribe')}
+                    </Button>
+                </Box>
             </Box>
 
             {/* 4. Snackbar component for user feedback */}

@@ -151,7 +151,7 @@ export default function ParticleNetworkAnimation() {
                 position: 'absolute',
                 inset: 0,
                 height: '100%',
-                width: '150%',
+                width: '250%',
                 backgroundColor: neumorphism.background,
                 zIndex: 0,
                 '&::before': {
