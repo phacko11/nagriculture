@@ -1,7 +1,7 @@
 # backend/Dockerfile
 
 # ---------- Base image ----------
-FROM node:20-alpine AS base
+FROM node:22-bookworm AS base
 
 RUN corepack enable && corepack prepare pnpm@latest --activate
 

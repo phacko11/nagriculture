@@ -1,12 +1,20 @@
-import React from 'react';
-import { Box, Container, Grid, Typography, Button, Link, IconButton, Stack } from '@mui/material';
-import EmailIcon from '@mui/icons-material/Email';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import Image from 'next/image';
-import { useTranslations } from 'next-intl';
-import { fonts } from './MuiProvider';
-
+import React from "react";
+import {
+  Box,
+  Container,
+  Grid,
+  Typography,
+  Button,
+  Link,
+  IconButton,
+  Stack,
+} from "@mui/material";
+import EmailIcon from "@mui/icons-material/Email";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import Image from "next/image";
+import { useTranslations } from "next-intl";
+import { fonts } from "./MuiProvider";
 
 const Footer = () => {
     const t = useTranslations('navigate');
@@ -80,21 +88,39 @@ const Footer = () => {
                     </Container>
                 </Grid>
 
-                {/* Company Links */}
-                <Grid size={{ xs: 6, md: 3 }}>
-                    <Stack spacing={1.5}>
-                        <Typography variant="h6" gutterBottom sx={{ fontWeight: 'bold', mb: 1 }}>
-                            {t('Company')}
-                        </Typography>
-                        <Link href="/" color="grey.400" underline="hover">{t('Home')}</Link>
-                        <Link href="/about" color="grey.400" underline="hover">{t('About')}</Link>
-                        <Link href="/research" color="grey.400" underline="hover">{t('Research')}</Link>
-                        <Link href="/blog" color="grey.400" underline="hover">{t('Blog')}</Link>
-                        <Link href="/news" color="grey.400" underline="hover">{t('News')}</Link>
-                        <Link href="/faqs" color="grey.400" underline="hover">{t('FAQs')}</Link>
-                        <Link href="/pricing" color="grey.400" underline="hover">{t('Pricing')}</Link>
-                    </Stack>
-                </Grid>
+        {/* Company Links */}
+        <Grid size={{ xs: 6, md: 3 }}>
+          <Stack spacing={1.5}>
+            <Typography
+              variant="h6"
+              gutterBottom
+              sx={{ fontWeight: "bold", mb: 1 }}
+            >
+              {t("Company")}
+            </Typography>
+            <Link href="/" color="grey.400" underline="hover">
+              {t("Home")}
+            </Link>
+            <Link href="/about" color="grey.400" underline="hover">
+              {t("About")}
+            </Link>
+            <Link href="/research" color="grey.400" underline="hover">
+              {t("Research")}
+            </Link>
+            <Link href="/blog" color="grey.400" underline="hover">
+              {t("Blog")}
+            </Link>
+            <Link href="/news" color="grey.400" underline="hover">
+              {t("News")}
+            </Link>
+            <Link href="/faqs" color="grey.400" underline="hover">
+              {t("FAQs")}
+            </Link>
+            <Link href="/pricing" color="grey.400" underline="hover">
+              {t("Pricing")}
+            </Link>
+          </Stack>
+        </Grid>
 
                 {/* Social Links */}
                 <Grid size={{ xs: 6, md: 3 }}>
