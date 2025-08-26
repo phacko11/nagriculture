@@ -1,20 +1,20 @@
 import React from "react";
 import {
-  Box,
-  Container,
-  Grid,
-  Typography,
-  Button,
-  Link,
-  IconButton,
-  Stack,
+    Box,
+    Container,
+    Grid,
+    Typography,
+    Button,
+    Link,
+    IconButton,
+    Stack,
 } from "@mui/material";
 import EmailIcon from "@mui/icons-material/Email";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { fonts } from "./MuiProvider";
+import { fonts, neumorphism } from "./MuiProvider";
 
 const Footer = () => {
     const t = useTranslations('navigate');
@@ -25,7 +25,7 @@ const Footer = () => {
                 backgroundColor: '#1C1C1C',
                 color: 'white',
                 py: { xs: 4, md: 8 },
-                px: { xs: 2, sm: 4 },
+                px: neumorphism.layoutX,
             }}
         >
 
@@ -33,17 +33,17 @@ const Footer = () => {
             <Grid container spacing={{ xs: 5, md: 4 }}>
                 <Grid size={{ xs: 12, md: 6 }}>
 
-                    <Container>
+                    <Box>
                         {/* Top CTA Section */}
                         <Box sx={{
                             mb: { xs: 1, md: 2 }
                         }}>
                             <Typography
                                 gutterBottom
-                                sx={{ fontWeight: 'bold', mb: 3, fontSize: {xs: fonts.sizes.md, md: fonts.sizes.lg} }}
+                                sx={{ fontWeight: 'bold', mb: 3, fontSize: { xs: fonts.sizes.md, md: fonts.sizes.lg } }}
                             >
                                 {t('Slogan')}
-                            </Typography>   
+                            </Typography>
                             <Button
                                 variant="contained"
                                 href="https://app.miquant.vn/"
@@ -85,42 +85,42 @@ const Footer = () => {
                                 © 2025 Miquant | {t('Address')} | (+84) 769 810 247
                             </Typography>
                         </Stack>
-                    </Container>
+                    </Box>
                 </Grid>
 
-        {/* Company Links */}
-        <Grid size={{ xs: 6, md: 3 }}>
-          <Stack spacing={1.5}>
-            <Typography
-              variant="h6"
-              gutterBottom
-              sx={{ fontWeight: "bold", mb: 1 }}
-            >
-              {t("Company")}
-            </Typography>
-            <Link href="/" color="grey.400" underline="hover">
-              {t("Home")}
-            </Link>
-            <Link href="/about" color="grey.400" underline="hover">
-              {t("About")}
-            </Link>
-            <Link href="/research" color="grey.400" underline="hover">
-              {t("Research")}
-            </Link>
-            <Link href="/blog" color="grey.400" underline="hover">
-              {t("Blog")}
-            </Link>
-            <Link href="/news" color="grey.400" underline="hover">
-              {t("News")}
-            </Link>
-            <Link href="/faqs" color="grey.400" underline="hover">
-              {t("FAQs")}
-            </Link>
-            <Link href="/pricing" color="grey.400" underline="hover">
-              {t("Pricing")}
-            </Link>
-          </Stack>
-        </Grid>
+                {/* Company Links */}
+                <Grid size={{ xs: 6, md: 3 }}>
+                    <Stack spacing={1.5}>
+                        <Typography
+                            variant="h6"
+                            gutterBottom
+                            sx={{ fontWeight: "bold", mb: 1 }}
+                        >
+                            {t("Company")}
+                        </Typography>
+                        <Link href="/" color="grey.400" underline="hover">
+                            {t("Home")}
+                        </Link>
+                        <Link href="/about" color="grey.400" underline="hover">
+                            {t("About")}
+                        </Link>
+                        <Link href="/research" color="grey.400" underline="hover">
+                            {t("Research")}
+                        </Link>
+                        <Link href="/blog" color="grey.400" underline="hover">
+                            {t("Blog")}
+                        </Link>
+                        <Link href="/news" color="grey.400" underline="hover">
+                            {t("News")}
+                        </Link>
+                        <Link href="/faqs" color="grey.400" underline="hover">
+                            {t("FAQs")}
+                        </Link>
+                        <Link href="/pricing" color="grey.400" underline="hover">
+                            {t("Pricing")}
+                        </Link>
+                    </Stack>
+                </Grid>
 
                 {/* Social Links */}
                 <Grid size={{ xs: 6, md: 3 }}>
@@ -132,10 +132,10 @@ const Footer = () => {
                             <IconButton href="mailto:info@miquant.vn" aria-label="email" sx={{ color: 'white' }}>
                                 <EmailIcon fontSize="large" />
                             </IconButton>
-                            <IconButton href="https://www.linkedin.com/company/miquant" aria-label="linkedin" sx={{ color: 'white' }}>
+                            <IconButton href="https://www.linkedin.com/company/miquant" aria-label="linkedin" target="_blank" sx={{ color: 'white' }}>
                                 <LinkedInIcon fontSize="large" />
                             </IconButton>
-                            <IconButton href="https://www.facebook.com/profile.php?id=61577764534124" aria-label="facebook" sx={{ color: 'white' }}>
+                            <IconButton href="https://www.facebook.com/profile.php?id=61577764534124" target="_blank" aria-label="facebook" sx={{ color: 'white' }}>
                                 <FacebookIcon fontSize="large" />
                             </IconButton>
                         </Stack>

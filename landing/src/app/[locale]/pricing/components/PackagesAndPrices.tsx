@@ -1,6 +1,6 @@
 'use client'
 import { useState } from 'react';
-import { colors, fonts, neumorphism } from '@/app/components/MuiProvider';
+import { colors, fonts, HoverBackground, neumorphism } from '@/app/components/MuiProvider';
 import { Card, CardContent, Typography, Grid, Box, List, ListItem, ListItemIcon, ListItemText, ToggleButtonGroup, ToggleButton, Divider, Link } from '@mui/material';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Check, CheckCircle, Star } from '@mui/icons-material';
@@ -148,7 +148,7 @@ const pricingTiers = ['Free', 'Standard', 'Premium', 'Enterprise'].map(key => ({
                 </ToggleButtonGroup>
             </Box>
 
-            <Grid container spacing={3} justifyContent="center" alignItems="stretch" px={{ xs: 2, sm: 4, md: 6, lg: 8 }}>
+            <Grid container spacing={3} justifyContent="center" alignItems="stretch" px={neumorphism.layoutX}>
                 {pricingTiers.map((tier, index) => {
                     const isCalculable = tier.title !== 'Free' && tier.title !== 'Enterprise';
                     let originalPriceNum = 0;
@@ -177,7 +177,8 @@ const pricingTiers = ['Free', 'Standard', 'Premium', 'Enterprise'].map(key => ({
                                     borderRadius: '16px',
                                     textAlign: 'center',
                                     flexGrow: 1,
-                                    background: neumorphism.card,
+                                    // background: neumorphism.card,
+                                    ...HoverBackground,
                                     position: 'relative', // MODIFIED: Added for badge positioning
                                     overflow: 'hidden',   // MODIFIED: Added to contain the badge
                                     // --- NEW ---: Conditional styling for the premium card

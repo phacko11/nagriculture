@@ -9,7 +9,7 @@ import IconButton from '@mui/material/IconButton';
 import Stack from '@mui/material/Stack';
 import CircularProgress from '@mui/material/CircularProgress';
 import SendIcon from '@mui/icons-material/Send';
-import { fonts, colors, neumorphism } from '../../../components/MuiProvider';
+import { fonts, colors, neumorphism, HoverBackground } from '../../../components/MuiProvider';
 import { useTranslations } from 'next-intl';
 
 // Mock API call function (replace with your backend implementation as needed)
@@ -22,7 +22,7 @@ async function callRobustAgentAPI(prompt: string) {
 export default function Chat() {
     const handleNavigate = () => {
         // Navigate to the external URL
-        window.location.href = 'https://app.miquant.vn/';
+        window.open("https://app.miquant.vn/", "_blank", "noopener,noreferrer");
     };
     const t = useTranslations('HomePage.Chat');
 
@@ -33,14 +33,14 @@ export default function Chat() {
     return (
         <Box
             sx={{
-                background: neumorphism.card,
+                // background: neumorphism.card,
                 display: 'flex',
                 flexDirection: 'column',
                 gap: 4,
                 px: { lg: 15, md: 10, xs: 2 },
                 py: 20,
-                boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.15), 0px -4px 6px rgba(255, 255, 255, 1)',
-
+                boxShadow: neumorphism.upperbackground,
+                ...HoverBackground
             }}>
             <Container maxWidth="md">
                 <Box textAlign="center" mb={5}>

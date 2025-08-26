@@ -18,13 +18,13 @@ export default function MemberOf() {
                 marginTop: -5,
             }}
         >
-            
-            <Typography sx={{
+            <SectionTitle text={t('Partner')} />
+            {/* <Typography sx={{
                 fontWeight: fonts.weights.semiBold,
                 fontSize: fonts.sizes.lg,
             }}>
             {t('Partner')}
-            </Typography>
+            </Typography> */}
             <Box
                 sx={{
                     display: 'flex',

@@ -1,7 +1,7 @@
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 import { useTheme } from "@mui/material/styles";
-import { colors, fonts } from '../../../components/MuiProvider'
+import { colors, fonts, neumorphism } from '../../../components/MuiProvider'
 import { useTranslations } from 'next-intl';
 
 export default function AboutHero() {
@@ -15,7 +15,7 @@ export default function AboutHero() {
                 gap: { xs: 2, sm: 3 },
                 py: { xs: 6, sm: 8, md: 10 },
                 paddingBottom: { xs: 2, sm: 4, md: 6 },
-                px: { xs: 2, sm: 6, md: 12, lg: 20 },
+                px: neumorphism.layoutX,
                 alignItems: 'center',
                 boxSizing: 'border-box',
             }}

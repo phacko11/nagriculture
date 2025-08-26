@@ -1,9 +1,9 @@
 import { Box, Grid, Link, Pagination, Typography } from "@mui/material"
-import { fonts } from "./MuiProvider"
+import { fonts, neumorphism } from "./MuiProvider"
 import NewsCard from "./PostCard"
 import { useState } from "react";
 
-export default function AllPosts({ researches , text}) {
+export default function AllPosts({ researches, text }) {
     const [page, setPage] = useState(1);
     const ITEMS_PER_PAGE = 6;
 
@@ -14,10 +14,10 @@ export default function AllPosts({ researches , text}) {
     );
     return (
         <Box sx={{
-            px: { xs: 2, sm: 6, md: 8, lg: 20 },
+            px: neumorphism.layoutX,
             paddingBottom: 10,
         }}>
-            
+
 
             <Typography sx={{
                 fontWeight: fonts.weights.semiBold,
@@ -30,9 +30,12 @@ export default function AllPosts({ researches , text}) {
                 display: 'flex',
                 flexDirection: 'column',
                 gap: 2,
-                background: '#F0F0F0',
+                overflow: 'visible'
             }}>
-                <Grid container spacing={{ xs: 2, sm: 2, md: 3 }}>
+                <Grid container spacing={{ xs: 2, sm: 2, md: 3 }} sx={{
+
+                    overflow: 'visible'
+                }}>
                     {paginatedResearches.map((item, index) => (
                         <Grid
                             key={item.id ?? index}

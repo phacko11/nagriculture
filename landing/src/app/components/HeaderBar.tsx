@@ -2,6 +2,7 @@
 import { AppBar, Toolbar, Typography, Box, Button, Menu, MenuItem, IconButton } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import { colors, fonts } from './MuiProvider'; // Assuming this path is correct
+import { motion } from "framer-motion";
 
 
 // 1. Import the correct hooks from next-intl's client library
@@ -74,7 +75,7 @@ export default function HeaderBar() {
         handleMenuClose();
     };
 
-    const navItems = ['Home','About', 'Research', 'Blog', 'News', 'FAQs', 'Pricing'];
+    const navItems = ['Home', 'About', 'Research', 'Blog', 'News', 'FAQs', 'Pricing'];
 
 
     return (
@@ -90,10 +91,18 @@ export default function HeaderBar() {
                 borderRadius: isScrolled ? 5 : 0,
                 top: isScrolled ? { xs: 8, md: 20 } : 0,
                 left: isScrolled ? { md: '50%' } : 0,
-                transform: isScrolled ? { md: 'translateX(-50%) scale(0.97)' } : 'none',
+                // transform: isScrolled ? { md: 'translateX(-50%) scale(0.97)' } : 'none',
+                transform: isScrolled ? { md: 'translateX(-50%)' } : 'none',
                 boxShadow: isScrolled ? '0 8px 32px rgba(0,0,0,0.10)' : 'none',
-                width: { xs: '100%', md: isScrolled ? 'calc(100% - 48px)' : '100%' },
-                maxWidth: isScrolled ? 1000 : '100%',
+
+                width: {
+                    xs: '100%',
+                    sm: isScrolled ? 'calc(100% - 16px)' : '100%',
+                    md: isScrolled ? 'calc(100% - 200px)' : '100%',
+                    lg: isScrolled ? 'calc(100% - 320px)' : '100%',
+                    xl: isScrolled ? 'calc(100% - 320px)' : '100%',
+                },
+                // maxWidth: isScrolled ? 1000 : '100%',
                 transition: 'all 0.3s cubic-bezier(0.4,0,0.2,1)',
             }}
         >
@@ -104,16 +113,58 @@ export default function HeaderBar() {
 
                 <Box sx={{ display: 'flex', alignItems: 'center', gap: { xs: 0.5, sm: 1 } }}>
                     {/* Desktop Navigation Links */}
-                    <Box sx={{ display: { xs: 'none',sm: 'none', md: 'flex'}, gap: { sm: 1, md: 2 }, mx: 2,}}>
+                    <Box sx={{ display: { xs: 'none', sm: 'none', md: 'flex' }, gap: { sm: 1, md: 2 }, mx: 2, }}>
                         {navItems.map((text) => {
                             const path = text === 'Home' ? '/' : `/${text.toLowerCase()}`;
                             const isActive = pathname === path;
                             return (
-                                <Link key={text} href={path} style={{ textDecoration: 'none' }}>
-                                    <Typography sx={{ fontSize: fonts.sizes.sm, fontWeight: 500, px: 1, py: 0.5, textTransform: 'none', color: colors.primary._0, cursor: 'pointer', transition: 'all 0.3s ease', backgroundColor: isActive ? 'rgba(0, 0, 0, 0.1)' : 'transparent', borderRadius: isActive ? 1 : 0, '&:hover': { color: colors.primary._5, transform: 'scale(1.05)' } }}>
-                                        {t(text)}
-                                    </Typography>
+                                <Link key={text} href={path} style={{ textDecoration: "none" }}>
+                                    <Box
+                                        sx={{
+                                            position: "relative",
+                                            display: "inline-flex",
+                                            alignItems: "center",
+                                            justifyContent: "center",
+                                            px: 1.5,
+                                            py: 0.5,
+                                            borderRadius: 2,
+                                            cursor: "pointer",
+                                            overflow: "hidden",
+                                        }}
+                                    >
+                                        {/* Glassmorphism active background */}
+                                        {isActive && (
+                                            <Box
+                                                sx={{
+                                                    position: "absolute",
+                                                    inset: 0,
+                                                    borderRadius: 2,
+                                                    background: "rgba(255, 255, 255, 0.2)",
+                                                    backdropFilter: "blur(12px)",
+                                                    WebkitBackdropFilter: "blur(12px)", // Safari
+                                                    border: "1px solid rgba(255,255,255,0.3)",
+                                                    boxShadow: "0 4px 16px rgba(0,0,0,0.1)",
+                                                    zIndex: 0,
+                                                }}
+                                            />
+                                        )}
+
+                                        {/* Label */}
+                                        <Typography
+                                            sx={{
+                                                position: "relative",
+                                                zIndex: 1,
+                                                fontSize: fonts.sizes.sm,
+                                                fontWeight: 500,
+                                                textTransform: "none",
+                                                color: isActive ? colors.primary._5 : colors.primary._0,
+                                            }}
+                                        >
+                                            {t(text)}
+                                        </Typography>
+                                    </Box>
                                 </Link>
+
                             );
                         })}
                     </Box>
@@ -157,6 +208,7 @@ export default function HeaderBar() {
                             anchorEl={anchorEl}
                             open={open}
                             onClose={handleMenuClose}
+                            disableScrollLock
                             PaperProps={{
                                 sx: {
                                     borderRadius: 2,

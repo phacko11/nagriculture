@@ -1,7 +1,7 @@
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
-import { neumorphism } from "@/app/components/MuiProvider";
+import { HoverBackground, neumorphism } from "@/app/components/MuiProvider";
 import { useTranslations } from "next-intl";
 
 export default function BusinessSection() {
@@ -9,16 +9,16 @@ export default function BusinessSection() {
     return (
         <Box
             sx={{
-                px: 4,
+                    px: neumorphism.layoutX,
             }}>
 
             <Box
                 className="neumorphic"
                 sx={{
-                    borderRadius: 2,
+                    borderRadius: '16px',
                     p: 3,
-                    px: { xs: 2, sm: 4, md: 6, lg: 8 },
-                    background: neumorphism.card,
+                    // background: neumorphism.card,
+                    ...HoverBackground,
                 }}
             >
                 <Box display="flex" alignItems="center" mb={1}>

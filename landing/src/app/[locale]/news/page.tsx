@@ -4,7 +4,7 @@ import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
-import { fonts } from '../../components/MuiProvider'
+import { fonts, neumorphism } from '../../components/MuiProvider'
 import { useTheme } from '@mui/material/styles'
 import NewsCard from '../../components/PostCard';
 import MainResearches from '../../components/MainPostCards';
@@ -62,7 +62,7 @@ export default function News() {
     const theme = useTheme()
     return (
         <Box sx={{
-            background: '#F0F0F0',
+            background: neumorphism.background,
             width: "100%",
             display: 'flex',
             flexDirection: 'column',

@@ -1,9 +1,10 @@
 import * as React from 'react';
 import { Tabs, Tab, Box, Typography } from '@mui/material';
 import Grid from '@mui/material/Grid';
-import { colors, fonts, neumorphism } from '../../../components/MuiProvider';
+import { colors, fonts, HoverBackground, neumorphism } from '../../../components/MuiProvider';
 import MUIShinyText from './ShinyText';
 import { useTranslations } from 'next-intl';
+import SectionTitle from './SectionTitle';
 
 function CustomTabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -15,7 +16,7 @@ function CustomTabPanel(props) {
             aria-labelledby={`simple-tab-${index}`}
             {...other}
         >
-            {value === index && <Box sx={{ p: { xs: 2, md: 4 } }}>{children}</Box>}
+            {value === index && <Box sx={{ p: { xs: 2, md: 4 }, px: neumorphism.layoutX }}>{children}</Box>}
         </div>
     );
 }
@@ -54,10 +55,9 @@ export default function Insight() {
     const handleChange = (event, newValue) => setValue(newValue);
     const t = useTranslations('HomePage.Insight');
     return (
-        <Box sx={{ width: '100%', bgcolor: neumorphism.card, py: 6, boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.15), 0px -4px 6px rgba(255, 255, 255, 1)' }}>
-            <Typography variant="h4" component="h2" align="center" fontWeight="bold" gutterBottom>
-                {t('Headline')}
-            </Typography>
+        <Box sx={{ width: '100%', bgcolor: neumorphism.card, py: 6, boxShadow: neumorphism.upperbackground, 
+                        ...HoverBackground }}>
+            <SectionTitle text={t('Headline')} />
 
             <Box sx={{ display: 'flex', justifyContent: 'center' }}>
                 <Tabs
@@ -120,14 +120,14 @@ export default function Insight() {
 
             {tabsData.map((tab, index) => (
                 <CustomTabPanel key={index} value={value} index={index}>
-                    <Grid container spacing={4} alignItems="center" justifyContent="center" width='100%' height={'auto'} paddingX={{ lg: 15, md: 10, xs: 2 }}>
+                    <Grid container spacing={10} alignItems="center" justifyContent="center" width='100%' height={'auto'}>
                         <Grid size={{ xs: 12, md: 6 }}>
                             {tab.label === "Sự kiện kinh tế" ?
                                 (
                                     <Box
                                         className='neumorphic'
                                         sx={{
-                                            background: neumorphism.card,
+                                            // background: neumorphism.card,
                                             p: 0.5,
                                             aspectRatio: '16 / 9',       // ✅ Force 16:9 aspect ratio
                                             width: '100%',
@@ -138,6 +138,7 @@ export default function Insight() {
                                             display: 'flex',
                                             alignItems: 'center',      // ✅ vertical center
                                             justifyContent: 'center',
+                                            ...HoverBackground,
                                         }}
                                     >
                                         <MUIShinyText>
@@ -174,7 +175,6 @@ export default function Insight() {
                                 )}
                         </Grid>
                         <Grid size={{ xs: 12, md: 6 }} sx={{
-                            px: { xs: 2, sm: 4, md: 6, lg: 8 },
                             display: 'flex',
                             height: '100%',
                             flexDirection: 'column',

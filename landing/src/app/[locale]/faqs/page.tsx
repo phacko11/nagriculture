@@ -6,9 +6,10 @@ import Box from '@mui/material/Box';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Typography from '@mui/material/Typography';
 import { useTheme } from '@mui/material/styles';
-import { fonts, neumorphism } from '../../components/MuiProvider'
+import { fonts, HoverBackground, neumorphism } from '../../components/MuiProvider'
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
+import ParticleNetwork from '@/app/components/ParticleNetwork';
 
 // Make sure your CSS file with the new classes is imported
 // import './your-styles.css'; 
@@ -40,9 +41,9 @@ export default function FAQsPage() {
                 display: 'flex',
                 flexDirection: 'column',
                 py: { xs: 4, sm: 6, md: 20 },
-                px: { xs: 2, sm: 4, md: 10, lg: 20, xl: 30 },
+                px: neumorphism.layoutX,
                 gap: 2,
-                background: '#F0F0F0',
+                // background: '#F0F0F0',
             }}>
             {
                 qnas.map((item, index) => (
@@ -52,7 +53,8 @@ export default function FAQsPage() {
                         expanded={expandedIndex === index}
                         onMouseEnter={() => setExpandedIndex(index)}
                         sx={{
-                            backgroundColor: neumorphism.card,
+                            ...HoverBackground,
+                            // backgroundColor: neumorphism.card,
                             borderRadius: '8px !important',
                             py: 1,
                             boxShadow: neumorphism.outline,
@@ -66,6 +68,7 @@ export default function FAQsPage() {
                                 margin: '0',
                                 borderRadius: '8px',
                                 boxShadow: neumorphism.hover,
+                                backdropFilter: '4px'
                             },
                         }}>
                         <AccordionSummary
@@ -89,6 +92,7 @@ export default function FAQsPage() {
                     </Accordion>
                 ))
             }
+            <ParticleNetwork />
         </Box>
 
     )

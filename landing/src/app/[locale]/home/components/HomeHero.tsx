@@ -1,6 +1,6 @@
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import { fonts, colors } from "../../../components/MuiProvider";
+import { fonts, colors, neumorphism, HoverBackground } from "../../../components/MuiProvider";
 import { AutoGraphRounded } from "@mui/icons-material";
 import AnimatedBackground from "./AnimatedBackground";
 import { useTranslations } from "next-intl";
@@ -37,10 +37,10 @@ export default function HomeHero() {
             justifyContent: 'center',
             alignItems: 'center',
             overflow: 'hidden', // Hides the parts of orbits that go off-screen
-            backgroundColor: 'white', // Fallback background color
-            boxShadow: '0px 4px 6px rgba(131, 131, 131, 0.15)',
+            boxShadow: neumorphism.upperbackground,
+            ...HoverBackground
         }}>
-            <ParticleNetworkAnimation />
+            {/* <ParticleNetworkAnimation /> */}
             <Box sx={{
                 width: '100%',
                 display: 'flex',
@@ -51,8 +51,8 @@ export default function HomeHero() {
                 alignItems: 'center',
                 position: 'relative', // Sits in the normal flow
                 zIndex: 1, // Ensures content is above the background
-                backgroundColor: 'rgba(255, 255, 255, 0.3)', // Adjust transparency as needed
-                backdropFilter: 'blur(2px)', // This creates the blur effect
+                // backgroundColor: 'rgba(255, 255, 255, 0.3)', // Adjust transparency as needed
+                // backdropFilter: 'blur(2px)', // This creates the blur effect
             }}>
                 <Box
                     sx={{
@@ -206,18 +206,17 @@ export default function HomeHero() {
 
 
                 <Box
+                    className="neumorphic"
                     sx={{
+                        
                         display: 'flex',
                         width: { xs: '100%', md: '90%', lg: '80%' },
-                        maxWidth: '1200px', // Set a max-width for very large screens
+                        maxWidth: '1200px',
                         aspectRatio: '16 / 9',
-                        // border: '3px solid',
                         borderColor: colors.neutral._0,
-                        borderRadius: { xs: '16px', md: '32px' },
+                        borderRadius: '20px',
                         overflow: 'hidden',
-                        boxShadow: '0 0 16px rgba(0, 0, 0, 0.4)',
-                        // background: `${colors.primary._4}80`,
-                        // p: { xs: 1, md: 2 },
+                        p: { xs: '1px', md: '4px' },
                         zIndex: 1,
                     }}
                 >

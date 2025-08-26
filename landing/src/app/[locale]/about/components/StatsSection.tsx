@@ -3,7 +3,7 @@ import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 import { useTheme } from '@mui/material/styles'
 import React, { useEffect, useState } from 'react'
-import { colors, fonts, neumorphism } from '../../../components/MuiProvider'
+import { colors, fonts, HoverBackground, neumorphism } from '../../../components/MuiProvider'
 import { CountUp } from "@/components/lightswind/count-up"
 import { useTranslations } from 'next-intl'
 
@@ -27,15 +27,23 @@ export default function StatsSection() {
     return (
         <Box
             sx={{
+                gap: { xs: 1, md: 3 },
+                px: neumorphism.layoutX,
+                borderRadius: '16px',
+            }}  
+        >
+            <Box
+            className = 'neumorphic'
+            sx={{
+                p: 2,
                 display: 'flex',
                 flexDirection: 'row', // Row until md, then column
                 justifyContent: { xs: 'center', md: 'space-between' },
                 alignItems: 'center',
-                gap: { xs: 1, md: 3 },
-                p: 2,
                 borderRadius: '16px',
-            }}
-        >
+                ...HoverBackground
+            }}>
+
             {stats.map((item, index) => (
                 <React.Fragment key={index}>
                     <Box
@@ -91,14 +99,15 @@ export default function StatsSection() {
                                 height: { xs: '100px', md: '150px' }, // Shorter on mobile
                                 background: neumorphism.card,
                                 width: '10px',
-                                borderRadius: '50%',
+                                borderRadius: '5px',
                                 boxShadow:
-                                    '4px 4px 6px rgba(0, 0, 0, 0.1), -4px -4px 6px rgba(255, 255, 255, 1)',
+                                    '4px 4px 6px rgba(225, 225, 225, 1), -4px -4px 6px rgba(255, 255, 255, 1)',
                             }}
                         />
                     )}
                 </React.Fragment>
             ))}
+            </Box>
         </Box>
 
     )

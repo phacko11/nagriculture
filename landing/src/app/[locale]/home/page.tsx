@@ -13,11 +13,12 @@ import AnimatedBackground from "./components/AnimatedBackground";
 import UniqueFeatures from "./components/UniqueFeatures";
 import Insight from "./components/Insight";
 import AimedCustomer from "./components/AimedCustomer";
+import ParticleNetwork from "@/app/components/ParticleNetwork";
 
 export default function HomePage() {
     return (
         <Box sx={{
-            background: neumorphism.background,
+            // background: neumorphism.background,
             display: 'flex',
             flexDirection: 'column',
             // --- BẮT ĐẦU THAY ĐỔI ---
@@ -40,6 +41,7 @@ export default function HomePage() {
                 <Insight />
                 <UniqueFeatures />
             </Box>
+            <ParticleNetwork />
         </Box>
     )
 }

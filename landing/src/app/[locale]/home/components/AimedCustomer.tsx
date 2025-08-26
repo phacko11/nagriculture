@@ -1,41 +1,42 @@
-import { colors, neumorphism } from "@/app/components/MuiProvider";
+import { colors, HoverBackground, neumorphism } from "@/app/components/MuiProvider";
 import { Box, Button, Grid, Typography, Container } from "@mui/material";
 import SectionTitle from "./SectionTitle";
 import { useTranslations } from 'next-intl';
+import React from "react";
 
 const cardData = [
     {
         title: 'Title1',
         subtitle: 'Phát hiện cơ hội và rủi ro',
         description: "Card1",
-        imgSrc: '/assets/pexels-photo-5816299.jpeg'
+        imgSrc: 'https://en.pimg.jp/110/652/749/1/110652749.jpg'
     },
     {
         title: 'Title2',
         subtitle: 'Tự động hoá và nâng cao hiệu suất',
         description: "Card2",
-        imgSrc: '/assets/pexels-photo-7459470.jpeg'
+        imgSrc: ''
     },
     {
         title: 'Title3',
         subtitle: 'Xây dựng và tích hợp dữ liệu',
         description: "Card3",
-        imgSrc: '/assets/pexels-divinetechygirl-1181271.jpg'
+        imgSrc: 'https://img.freepik.com/premium-vector/binary-language-background-3d-illustration-background-with-binary-code-isolated-white_700226-1738.jpg'
     }
 ];
 
 export default function AimedCustomer() {
     const t = useTranslations('HomePage.WhoItsFor');
     return (
-        <Container
-            maxWidth={false}
+        <Box
+            // maxWidth={false}
             sx={{
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
                 flexDirection: 'column',
                 gap: 2,
-                px: 2,
+                px: neumorphism.layoutX
             }}
         >
             <SectionTitle text={t('Headline')} />
@@ -60,6 +61,7 @@ export default function AimedCustomer() {
                             height: { xs: '350px', lg: '450px' },
                             width: { xs: '100%', md: '33.33%' },
                             bgcolor: neumorphism.card,
+                            ...HoverBackground,
                             borderRadius: '16px',
                             overflow: 'hidden',
                             transition: 'width 400ms ease-in-out, all 400ms ease-in-out',
@@ -75,22 +77,38 @@ export default function AimedCustomer() {
                         }}
                     >
 
-                            {/* Title section at the TOP */}
-                            <Box
-                                sx={{
-                                    p: 2, 
-                                    position: 'relative', // Use relative to be part of the flex flow
-                                    zIndex: 10,
-                                    height: '4rem'
-                                }}
+                        {/* Title section at the TOP */}
+                        <Box
+                            sx={{
+                                p: 2,
+                                position: 'relative', // Use relative to be part of the flex flow
+                                zIndex: 10,
+                                height: '4rem'
+                            }}
+                        >
+                            <Typography
+                                variant="h5"
+                                component="h2"
+                                fontWeight="bold"
+                                color={colors.neutral._9}
+                                align="center"
                             >
-                                <Typography variant="h5" component="h2" fontWeight="bold" color={colors.neutral._9} align="center">
-                                    {t(card.title)}
-                                </Typography>
-                                {/* <Typography variant="body2" color={colors.neutral._9} align="center">
-                                    {card.subtitle}
-                                </Typography> */}
-                            </Box>
+                                {t(card.title).split("&").map((part, index, arr) => (
+                                    <React.Fragment key={index}>
+                                        {part}
+                                        {index < arr.length - 1 && (
+                                            <>
+                                                &amp;
+                                                <br />
+                                            </>
+                                        )}
+                                    </React.Fragment>
+                                ))}
+                            </Typography>
+                            {/* <Typography variant="body2" color={colors.neutral._9} align="center">
+                                        {card.subtitle}
+                                    </Typography> */}
+                        </Box>
                         <Box
                             sx={{
                                 position: 'relative',
@@ -98,7 +116,6 @@ export default function AimedCustomer() {
                                 p: 3,
                                 borderRadius: '12px', // inner radius smaller than outer
                                 overflow: 'hidden',
-                                bgcolor: 'black',
                                 // --- MODIFICATIONS START ---
                                 display: 'flex',
                                 flexDirection: 'column',
@@ -107,7 +124,6 @@ export default function AimedCustomer() {
                                 // --- MODIFICATIONS END ---
                             }}
                         >
-                            {/* Background Image */}
                             <Box
                                 component="img"
                                 src={card.imgSrc}
@@ -121,16 +137,13 @@ export default function AimedCustomer() {
                                     objectPosition: 'center',
                                 }}
                             />
-                            {/* Overlay */}
                             <Box
                                 sx={{
                                     position: 'absolute',
                                     inset: 0,
-                                    bgcolor: 'rgba(0, 0, 0, 0.44)',
+                                    bgcolor: 'rgba(250, 250, 255, 0.56)',
                                 }}
                             />
-
-                            {/* Description at the BOTTOM, appears on hover */}
                             <Box
                                 className="hover-content"
                                 sx={{
@@ -141,7 +154,7 @@ export default function AimedCustomer() {
                                     transition: 'opacity 200ms ease, transform 200ms ease',
                                 }}
                             >
-                                <Typography variant="body1" color="white" align="center">
+                                <Typography variant="body1" color="black" align="center">
                                     {t(card.description)}
                                 </Typography>
                             </Box>
@@ -149,7 +162,7 @@ export default function AimedCustomer() {
                     </Box>
                 ))}
             </Box>
-        </Container>
+        </Box>
 
     );
 }

@@ -11,7 +11,7 @@ import {
     Paper
 } from '@mui/material'
 import { Check } from '@mui/icons-material'
-import { neumorphism } from '@/app/components/MuiProvider'
+import { HoverBackground, neumorphism } from '@/app/components/MuiProvider'
 import { useTranslations } from 'next-intl'
 
 const tiers = ['Free', 'Standard', 'Advanced']
@@ -26,7 +26,7 @@ export default function ComparisonTable() {// Data rows (grouped by tab/section)
         values: string[]
     }[] = t.raw('table')
     return (
-        <Box sx={{ py: 8, px: 4}}>
+        <Box sx={{ py: 8, px: neumorphism.layoutX}}>
             <Typography variant="h4" align="center" fontWeight="bold" gutterBottom>
                 {t('title')}
             </Typography>
@@ -34,7 +34,7 @@ export default function ComparisonTable() {// Data rows (grouped by tab/section)
                 {t('subtitle')}
             </Typography>
 
-            <TableContainer className='neumorphic' component={Paper} elevation={0} sx={{ borderRadius: 3, p:2, overflow: 'hidden', background: neumorphism.card, boxSizing: 'border-box' , width: '100%' }}>
+            <TableContainer className='neumorphic' component={Paper} elevation={0} sx={{ borderRadius: 3, p:2, overflow: 'hidden', ...HoverBackground, boxSizing: 'border-box' , width: '100%' }}>
                 <Table>
                     <TableHead>
                         <TableRow>

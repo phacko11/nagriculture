@@ -1,11 +1,11 @@
 import { Box, Grid, Typography } from "@mui/material"
-import { fonts } from "./MuiProvider"
+import { fonts, neumorphism } from "./MuiProvider"
 import NewsCard from "./PostCard"
 
 export default function MainPostCards({ researches , text}) {
     return (
         <Box sx={{
-            px: { xs: 2, sm: 6, md: 12, lg: 20 },
+            px: neumorphism.layoutX,
             gap: 3,
             display: 'flex',
             flexDirection: 'column',

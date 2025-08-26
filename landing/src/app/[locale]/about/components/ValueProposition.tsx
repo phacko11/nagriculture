@@ -1,7 +1,7 @@
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import { colors, fonts, neumorphism } from '../../../components/MuiProvider';
+import { colors, fonts, HoverBackground, neumorphism } from '../../../components/MuiProvider';
 import { useTheme } from '@mui/material/styles';
 import { BarChartRounded, ChatRounded, Circle, HandshakeRounded, KeyRounded, LightbulbOutlineRounded, SecurityRounded } from '@mui/icons-material';
 import SectionTitle from '../../home/components/SectionTitle';
@@ -34,7 +34,7 @@ export default function ValueProposition() {
                 display: 'flex',
                 flexDirection: 'column',
                 gap: 2,
-                px: { xs: 2, sm: 4, md: 6, lg: 8 }, // Responsive horizontal padding
+                px: neumorphism.layoutX,
                 alignItems: 'center',
             }}
         >
@@ -51,7 +51,7 @@ export default function ValueProposition() {
                         key={index}
                         size={{ xs: 12, sm: 6}} // 2 columns on small screens and up
                         sx={{
-                            background: neumorphism.card,
+                            ...HoverBackground,
                             display: 'flex',
                             flexDirection: 'column',
                             gap: 3,

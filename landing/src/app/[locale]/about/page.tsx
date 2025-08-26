@@ -10,13 +10,13 @@ import AboutSection1 from './components/AboutSection1'
 import AboutSection2 from './components/AboutSection2'
 import ValueProposition from './components/ValueProposition'
 import { useTranslations } from 'next-intl'
+import ParticleNetwork from '@/app/components/ParticleNetwork'
 export default function AboutPage() {
     const t = useTranslations('AboutPage');
 
     return (
         <Box
             sx={{
-                background: neumorphism.card,
                 display: 'flex',
                 flexDirection: 'column',
                 paddingTop: 15,
@@ -39,7 +39,7 @@ export default function AboutPage() {
                     py: 2,
                     width: '100%',
                     boxSizing: 'border-box',
-                    px: { xs: 2, sm: 4, md: 6, lg: 8 }, // Responsive horizontal padding
+                    px: neumorphism.layoutX, // Responsive horizontal padding
                 }}
             >
                 <Box
@@ -111,6 +111,7 @@ export default function AboutPage() {
                     </Box>
                 </Box>
             </Box>
+            <ParticleNetwork />
         </Box>
     )
 }

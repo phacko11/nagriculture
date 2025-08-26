@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Container, Grid, Typography } from '@mui/material';
 import SectionTitle from './SectionTitle';
-import { colors, fonts, neumorphism } from '@/app/components/MuiProvider';
+import { colors, fonts, HoverBackground, neumorphism } from '@/app/components/MuiProvider';
 import MUIShinyText from './ShinyText';
 import { useTranslations } from 'next-intl';
 
@@ -31,11 +31,18 @@ const featuresData = [
 ];
 
 const FeatureItem = ({ feature, index }) => {
-    const t= useTranslations('HomePage.Features');
-    const isReversed = index % 2 !== 0;
+    const t = useTranslations('HomePage.Features');
+    const isReversed = index % 2 !== 1;
     const textContent = (
-        <Grid size={{ xs: 12, md: 6 }}>
-            <Box sx={{ p: { xs: 2, md: 4 , lg: 8}, textAlign: { xs: 'center', md:'left'} }}>
+        <Grid size={{ xs: 12, md: 6 }}
+            className='neumorphic'
+            sx={{
+                ...HoverBackground,
+                borderRadius: '12px',
+                p: 6,
+            }}
+        >
+            <Box sx={{ textAlign: { xs: 'center', md: 'left' } }}>
                 <Typography variant="h5" component="h3" fontWeight="bold" gutterBottom>
                     {t(feature.title)}
                 </Typography>
@@ -55,7 +62,6 @@ const FeatureItem = ({ feature, index }) => {
             <Box
                 sx={{
                     position: 'relative',
-                    p: 4,
                     height: '100%',
                     minHeight: '300px',
                     display: 'flex',
@@ -72,7 +78,7 @@ const FeatureItem = ({ feature, index }) => {
                     className='neumorphic'
                     sx={{
                         background: neumorphism.card,
-                        p:0.5,
+                        p: 0.5,
                         aspectRatio: '1 / 1',       // ✅ Force 1:1 aspect ratio
                         width: '100%',
                         borderRadius: '12px',
@@ -88,7 +94,8 @@ const FeatureItem = ({ feature, index }) => {
 
     return (
         <Box sx={{ overflow: 'visible' }}>
-            <Grid container alignItems="center" direction={isReversed ? 'row-reverse' : 'row'}>
+            <Grid container alignItems="center" direction={isReversed ? 'row-reverse' : 'row'} spacing={10}
+            >
                 {textContent}
                 {mediaContent}
             </Grid>
@@ -102,63 +109,69 @@ export default function UniqueFeatures() {
     const t = useTranslations('HomePage.Features');
     return (
         <Box sx={{ py: { xs: 6, md: 10 } }}>
-            <Container>
-                <SectionTitle text={t('Headline')} />
+            {/* <Container> */}
+            <SectionTitle text={t('Headline')} />
 
-                <Box sx={{ display: 'flex', flexDirection: 'column', gap: { xs: 6, md: 10 } }}>
-                    {featuresData.map((feature, index) => (
-                        <FeatureItem key={index} feature={feature} index={index} />
-                    ))}
-                    <Grid container alignItems="center" direction={'row-reverse'}>
-                        <Grid size={{ xs: 12, md: 6 }}>
-                            <Box sx={{ p: { xs: 2, md: 4 }, textAlign: { xs: 'center', md: 'left' } }}>
-                                <Typography variant="h5" component="h3" fontWeight="bold" gutterBottom>
-                                    {t('AIRanking.Title')}
-                                </Typography>
-                                <Typography sx={{
-                                    color: colors.neutral._8,
-                                    fontSize: fonts.sizes.md,
-                                    lineHeight: 1.8
-                                }}>
-                                    {t('AIRanking.Desc')}
-                                </Typography>
-                            </Box>
-                        </Grid>
-                        <Grid size={{ xs: 12, md: 6 }}>
+            <Box sx={{ display: 'flex', flexDirection: 'column', gap: { xs: 6, md: 10 }, px: neumorphism.layoutX, py: 2 }}>
+                {featuresData.map((feature, index) => (
+                    <FeatureItem key={index} feature={feature} index={index} />
+                ))}
+                <Grid container alignItems="center" direction={'row'} spacing={10}>
+                    <Grid size={{ xs: 12, md: 6 }}
+                        className='neumorphic'
+                        sx={{
+                            ...HoverBackground,
+                            borderRadius: '12px',
+                            p: 6,
+                        }}>
+                        <Box sx={{ p: { xs: 2, md: 4 }, textAlign: { xs: 'center', md: 'left' } }}>
+                            <Typography variant="h5" component="h3" fontWeight="bold" gutterBottom>
+                                {t('AIRanking.Title')}
+                            </Typography>
+                            <Typography sx={{
+                                color: colors.neutral._8,
+                                fontSize: fonts.sizes.md,
+                                lineHeight: 1.8
+                            }}>
+                                {t('AIRanking.Desc')}
+                            </Typography>
+                        </Box>
+                    </Grid>
+                    <Grid size={{ xs: 12, md: 6 }}>
+                        <Box
+                            sx={{
+                                position: 'relative',
+                                height: '100%',
+                                minHeight: '300px',
+                                display: 'flex',
+                                alignItems: 'center',
+                                justifyContent: 'center',
+                            }}
+                        >
                             <Box
+                                className='neumorphic'
                                 sx={{
+                                    aspectRatio: '1 / 1',       // ✅ Force 1:1 aspect ratio
+                                    width: '100%',
+                                    borderRadius: '12px',
                                     position: 'relative',
-                                    p: 4,
-                                    height: '100%',
-                                    minHeight: '300px',
+                                    zIndex: 1,
+                                    objectFit: 'cover',
                                     display: 'flex',
-                                    alignItems: 'center',
+                                    alignItems: 'center',      // ✅ vertical center
                                     justifyContent: 'center',
+                                    ...HoverBackground,
                                 }}
                             >
-                                <Box
-                                    className='neumorphic'
-                                    sx={{
-                                        aspectRatio: '1 / 1',       // ✅ Force 1:1 aspect ratio
-                                        width: '100%',
-                                        borderRadius: '12px',
-                                        position: 'relative',
-                                        zIndex: 1,
-                                        objectFit: 'cover',
-                                        display: 'flex',
-                                        alignItems: 'center',      // ✅ vertical center
-                                        justifyContent: 'center',
-                                    }}
-                                >
-                                    <MUIShinyText>
-                                        coming soon...
-                                    </MUIShinyText>
-                                </Box>
+                                <MUIShinyText>
+                                    coming soon...
+                                </MUIShinyText>
                             </Box>
-                        </Grid>
+                        </Box>
                     </Grid>
-                </Box>
-            </Container>
+                </Grid>
+            </Box>
+            {/* </Container> */}
         </Box>
     );
 }
