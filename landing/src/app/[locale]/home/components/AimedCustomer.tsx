@@ -9,20 +9,20 @@ const cardData = [
         title: 'Title1',
         subtitle: 'Phát hiện cơ hội và rủi ro',
         description: "Card1",
-        imgSrc: 'https://en.pimg.jp/110/652/749/1/110652749.jpg'
+        imgSrc: '/assets/black-and-white-architecture.jpg'
     },
     {
         title: 'Title2',
         subtitle: 'Tự động hoá và nâng cao hiệu suất',
         description: "Card2",
-        imgSrc: ''
+        imgSrc: 'https://images.unsplash.com/photo-1551161440-88a5c5b09ba0?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
     },
     {
         title: 'Title3',
         subtitle: 'Xây dựng và tích hợp dữ liệu',
         description: "Card3",
-        imgSrc: 'https://img.freepik.com/premium-vector/binary-language-background-3d-illustration-background-with-binary-code-isolated-white_700226-1738.jpg'
-    }
+        imgSrc: 'https://images.unsplash.com/photo-1612128961739-2551681a0575?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+    }   
 ];
 
 export default function AimedCustomer() {
@@ -141,7 +141,7 @@ export default function AimedCustomer() {
                                 sx={{
                                     position: 'absolute',
                                     inset: 0,
-                                    bgcolor: 'rgba(250, 250, 255, 0.56)',
+                                    bgcolor: 'rgba(0, 0, 0, 0.5)',
                                 }}
                             />
                             <Box
@@ -154,7 +154,7 @@ export default function AimedCustomer() {
                                     transition: 'opacity 200ms ease, transform 200ms ease',
                                 }}
                             >
-                                <Typography variant="body1" color="black" align="center">
+                                <Typography variant="body1" color="white" align="center">
                                     {t(card.description)}
                                 </Typography>
                             </Box>

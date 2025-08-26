@@ -86,7 +86,6 @@ export default function AllResearchesCard({ researches, text }) {
 
                 {/* Dropdown Filter */}
                     <Select
-                        className="neumorphic"
                         value={selectedGroup?.month || ""}
                         onChange={(e) => handleSelectGroup(e.target.value)}
                         sx={{
@@ -94,6 +93,7 @@ export default function AllResearchesCard({ researches, text }) {
                             backgroundColor: neumorphism.card,
                             borderRadius: "8px",
                             "& .MuiOutlinedInput-notchedOutline": { border: "none" },
+                            boxShadow: "6px 6px 8px rgb(225, 225, 225), -6px -6px 8px rgba(255, 255, 255, 1), inset 0 0 0 1px #eaeaea",
                         }}
                     >
                         {groupedResearches.map((group) => (

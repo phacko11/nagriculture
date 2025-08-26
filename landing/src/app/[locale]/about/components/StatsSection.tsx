@@ -97,11 +97,11 @@ export default function StatsSection() {
                                 alignItems: 'center',
                                 mx: 1,
                                 height: { xs: '100px', md: '150px' }, // Shorter on mobile
-                                background: neumorphism.card,
+                                // background: neumorphism.card,
                                 width: '10px',
                                 borderRadius: '5px',
-                                boxShadow:
-                                    '4px 4px 6px rgba(225, 225, 225, 1), -4px -4px 6px rgba(255, 255, 255, 1)',
+                                boxShadow:'inset 4px 4px 6px rgba(225, 225, 225, 1), inset -4px -4px 6px rgba(255, 255, 255, 1), 0 0 2px rgba(0,0,0,.25)'
+                                ,
                             }}
                         />
                     )}

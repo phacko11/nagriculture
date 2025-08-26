@@ -3,7 +3,7 @@ import Typography from '@mui/material/Typography'
 import Box from '@mui/material/Box'
 import Grid from '@mui/material/Grid'
 import HeaderBar from '../../components/HeaderBar'
-import { colors, fonts, neumorphism } from '../../components/MuiProvider'
+import { colors, fonts, HoverBackground, neumorphism } from '../../components/MuiProvider'
 import AboutHero from './components/AboutHero'
 import StatsSection from './components/StatsSection'
 import AboutSection1 from './components/AboutSection1'
@@ -43,16 +43,16 @@ export default function AboutPage() {
                 }}
             >
                 <Box
-
                     className='neumorphic'
                     sx={{
-                        background: neumorphism.card,
+                        ...HoverBackground,
                         borderRadius: '32px',
                         // boxShadow: neumorphism.hover,
                         display: 'flex',
                         flexDirection: 'column',
                         gap: 4,
-                        p: 2,
+                        p: 4
+                        ,
                     }}>
                     <Box
                         component="img"
@@ -75,7 +75,8 @@ export default function AboutPage() {
                             justifyContent: 'space-between',
                             height: '100%',
                             gap: 2,
-                            px: 3,
+                            py: 2,
+                            // px: 3,
                             // minHeight: 300, // ensures enough space to separate
                         }}
                     >
