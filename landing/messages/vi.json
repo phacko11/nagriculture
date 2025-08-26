@@ -127,13 +127,13 @@
     "Recent": "Tin tức gần đây"
   },
   "ResearchPage": {
-    "Title":"Nghiên cứu định lượng",
+    "Title": "Nghiên cứu định lượng",
     "Subtitle": "Đăng ký để nhận báo cáo nghiên cứu mới nhất",
-    "EmailInput":"Nhập email của bạn...",
-    "Subscribe":"Đăng ký",
-    "Success":"Cảm ơn bạn đã đăng ký!",
-    "EmailError":"Lỗi khi gửi email",
-    "NetworkError":"Lỗi mạng. Vui lòng thử lại sau",
+    "EmailInput": "Nhập email của bạn...",
+    "Subscribe": "Đăng ký",
+    "Success": "Cảm ơn bạn đã đăng ký!",
+    "EmailError": "Lỗi khi gửi email",
+    "NetworkError": "Lỗi mạng. Vui lòng thử lại sau",
     "FactorReport": "Factor Report",
     "QuantitativeFinance": "Tài chính định lượng",
     "Locale": "vi-VN"
@@ -141,36 +141,41 @@
   "faqs": [
     {
       "summary": "Nền tảng Miquant là gì?",
-      "details": "Nền tảng Miquant là giải pháp tiên tiến kết hợp phân tích định lượng và trí tuệ nhân tạo, cung cấp các công cụ chuyên sâu giúp nhà đầu tư nâng cao khả năng ra quyết định và hiểu rõ thị trường tài chính. Miquant hỗ trợ từ giám sát thị trường cơ bản đến xếp hạng cổ phiếu phức tạp với trợ lý AI thông minh."
+      "details": "Miquant là nền tảng kết hợp phân tích định lượng và trí tuệ nhân tạo, mang đến công cụ giúp nhà đầu tư hiểu rõ thị trường và đưa ra quyết định sáng suốt hơn."
     },
     {
-      "summary": "Miquant có thể giúp tối ưu quy trình đầu tư của bạn thế nào?",
-      "details": "Nền tảng Miquant được xây dựng để tích hợp linh hoạt vào quy trình đầu tư của bạn. Với khả năng cung cấp thông tin chi tiết, tối ưu hóa chiến lược và đưa ra các khuyến nghị dựa trên AI, Miquant giúp cải thiện và nâng cao cả phương pháp đầu tư truyền thống và định lượng."
+      "summary": "Nhà đầu tư có cần kiến thức công nghệ để dùng Miquant không?",
+      "details": "Không cần. Miquant được thiết kế đơn giản, trực quan, phù hợp cho cả nhà đầu tư mới bắt đầu lẫn chuyên nghiệp."
     },
     {
-      "summary": "Những tính năng giá trị nhất đối với nhà đầu tư là gì?",
-      "details": "Miquant giúp nhà đầu tư theo dõi thị trường dễ dàng hơn nhờ các công cụ phân tích định lượng trực quan, tín hiệu rõ ràng và có cơ sở. Từ tâm lý thị trường, tin tức, sự kiện vĩ mô cho đến dữ liệu tài chính – mọi thứ đều được xử lý bằng AI để bạn không bỏ lỡ cơ hội và kiểm soát rủi ro tốt hơn."
+      "summary": "Miquant có thể tích hợp vào quy trình đầu tư như thế nào?",
+      "details": "Miquant dễ dàng đồng hành cùng quy trình đầu tư của bạn: cung cấp thông tin chi tiết, tối ưu hóa chiến lược và đưa ra khuyến nghị dựa trên AI để hỗ trợ mọi phong cách đầu tư."
     },
     {
-      "summary": "Thuật toán phân bổ danh mục nào đang được Miquant sử dụng?",
-      "details": "Miquant cung cấp các công cụ tối ưu hóa hiệu quả cho việc xây dựng danh mục đầu tư và quản lý rủi ro, từ mô hình phương sai trung bình (MVP) cơ bản đến các thuật toán máy học tiên tiến như Phân bổ rủi ro phân cấp (HRP) và các phương pháp tối ưu hóa phức tạp dựa trên mạng lưới."
+      "summary": "Miquant mang đến những tính năng gì?",
+      "details": "Bạn có thể theo dõi luận điểm và rủi ro của cổ phiếu, phân bổ tỷ trọng, định giá bằng AI, tự động cập nhật thị trường hằng ngày cùng nhiều công cụ khác hỗ trợ tối đa cho nhà đầu tư."
     },
     {
-      "summary": "Hệ thống AI của Miquant có gì nổi bật và đáng tin cậy?",
-      "details": "Miquant ứng dụng agentic AI và multi-agent AI, với nhiều tác tử chuyên biệt phối hợp phân tích dữ liệu tài chính, tin tức và tâm lý thị trường. Hệ thống tạo ra tín hiệu đầu tư minh bạch, có thể giải thích được, giúp nhà đầu tư ra quyết định nhanh, chính xác và có cơ sở."
+      "summary": "Miquant hỗ trợ tối ưu hóa như thế nào?",
+      "details": "Từ những mô hình cơ bản như MVP đến các thuật toán tiên tiến như HRP, Miquant giúp bạn xây dựng danh mục tối ưu và quản lý rủi ro hiệu quả."
     },
     {
-      "summary": "Miquant huấn luyện AI dựa trên những kiến thức và thông tin nào?",
-      "details": "AI Agent của Miquant được huấn luyện bằng dữ liệu tài chính chuyên sâu, tin tức thị trường, tâm lý nhà đầu tư và hành vi thực tế từ người dùng. Kết hợp với các thuật toán độc quyền và phân tích định lượng, hệ thống liên tục học hỏi và điều chỉnh để đưa ra gợi ý đầu tư chính xác, sát nhu cầu và dễ ứng dụng trong thực tế."
+      "summary": "AI Agent là gì và mang lại lợi ích gì?",
+      "details": "AI Agent giống như một trợ lý đầu tư thông minh: hỗ trợ phân tích, đưa ra khuyến nghị cá nhân hóa và tự động hóa nhiều công việc lặp lại, giúp bạn tiết kiệm thời gian và nâng cao kết quả."
     },
     {
-      "summary": "Hệ thống AI Ranking hoạt động như thế nào?",
-      "details": "Hệ thống AI Ranking của Miquant liên tục thích ứng và phát triển dựa trên dữ liệu đầu vào và khẩu vị của người dùng. Bằng cách học hỏi từ các yếu tố ưu tiên và yêu cầu cụ thể của nhà đầu tư (khẩu vị rủi ro, tái phân bổ danh mục, tối ưu hóa), nền tảng cung cấp các danh mục phù hợp với mục tiêu và chiến lược cá nhân."
+      "summary": "Miquant đảm bảo hệ thống AI đáng tin cậy như thế nào?",
+      "details": "Chúng tôi áp dụng các phương pháp kiểm thử chặt chẽ, minh bạch và bảo mật hiện đại để đảm bảo mọi phân tích đều chính xác, khách quan và có thể kiểm chứng."
     },
     {
-      "summary": "Miquant đảm bảo mức độ tin cậy của AI bằng cách nào?",
-      "details": "Miquant đảm bảo độ tin cậy của AI bằng cách áp dụng kiểm tra chéo mô hình, thu thập đánh giá và chấm điểm từ người dùng thực tế, đồng thời áp dụng các lớp lọc dữ liệu nghiêm ngặt trước khi đưa vào huấn luyện. Nhờ đó, hệ thống AI luôn minh bạch, có thể giải thích được và bám sát nhu cầu đầu tư thực tế."
+      "summary": "Miquant khác gì so với các nền tảng khác?",
+      "details": "Điểm nổi bật là Miquant luôn hướng đến sự minh bạch. Thay vì là một 'Blackbox', AI của chúng tôi cho ra kết quả đầu tư vừa hiệu quả vừa có thể giải thích rõ ràng."
+    },
+    {
+      "summary": "Khác biệt giữa gói Free và trả phí là gì?",
+      "details": "Gói Free: cung cấp đầy đủ công cụ cơ bản, phù hợp với danh mục VN30.\nGói Trả phí: mở rộng dữ liệu toàn thị trường, kèm báo cáo danh mục định lượng hàng tháng.\nChi tiết xem thêm tại: "
     }
+
   ],
   "Pricing": {
     "PackagesAndPrices": {

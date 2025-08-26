@@ -127,13 +127,13 @@
     "Recent": "Recent news"
   },
   "ResearchPage": {
-    "Title":"Quantitative Research",
+    "Title": "Quantitative Research",
     "Subtitle": "Subscribe to receive the latest research reports",
-    "EmailInput":"Input your email...",
-    "Subscribe":"Subscribe",
-    "Success":"Thank you for subscribing!",
-    "EmailError":"Error sending email",
-    "NetworkError":"NetworkError. Please try again later",
+    "EmailInput": "Input your email...",
+    "Subscribe": "Subscribe",
+    "Success": "Thank you for subscribing!",
+    "EmailError": "Error sending email",
+    "NetworkError": "NetworkError. Please try again later",
     "FactorReport": "Factor Report",
     "QuantitativeFinance": "Quantitative Finance",
     "Locale": "en-US"
@@ -141,35 +141,39 @@
   "faqs": [
     {
       "summary": "What is the Miquant platform?",
-      "details": "Miquant is an advanced platform that combines quantitative analysis and artificial intelligence, offering in-depth tools to help investors enhance decision-making and better understand the financial markets. Miquant supports everything from basic market monitoring to complex stock ranking with a smart AI assistant."
+      "details": "Miquant is a platform that combines quantitative analysis and artificial intelligence, providing tools that help investors better understand the market and make smarter investment decisions."
     },
     {
-      "summary": "How can Miquant optimize your investment process?",
-      "details": "Miquant is built to integrate flexibly into your investment workflow. With its ability to provide detailed insights, optimize strategies, and deliver AI-based recommendations, Miquant helps improve both traditional and quantitative investing approaches."
+      "summary": "Do investors need technical knowledge to use Miquant?",
+      "details": "No. Miquant is designed to be simple and intuitive, suitable for both beginners and professional investors."
     },
     {
-      "summary": "What are the most valuable features for investors?",
-      "details": "Miquant makes it easier for investors to monitor the market through intuitive quantitative tools and clear, data-backed signals. From market sentiment, news, macro events to financial data — everything is AI-processed so you don't miss opportunities and can better manage risk."
+      "summary": "How can Miquant integrate into the investment process?",
+      "details": "Miquant easily fits into your investment workflow by providing detailed insights, optimizing strategies, and delivering AI-powered recommendations to support any investment style."
     },
     {
-      "summary": "What portfolio allocation algorithms does Miquant use?",
-      "details": "Miquant provides powerful tools for portfolio construction and risk management, ranging from basic Mean-Variance Portfolio (MVP) models to advanced machine learning algorithms like Hierarchical Risk Parity (HRP) and complex network-based optimization methods."
+      "summary": "What features does Miquant offer?",
+      "details": "You can track stock theses and risks, allocate portfolio weights, perform AI-driven valuation, receive daily market updates, and access various other tools that maximize investment support."
     },
     {
-      "summary": "What makes Miquant's AI system outstanding and reliable?",
-      "details": "Miquant applies agentic AI and multi-agent AI, with specialized agents working together to analyze financial data, news, and market sentiment. The system produces transparent, explainable investment signals that support fast, accurate, and informed decision-making."
+      "summary": "How does Miquant support portfolio optimization?",
+      "details": "From basic models like MVP to advanced algorithms such as HRP, Miquant helps you build optimized portfolios and manage risks effectively."
     },
     {
-      "summary": "What knowledge and information is Miquant's AI trained on?",
-      "details": "Miquant’s AI agents are trained on deep financial data, market news, investor sentiment, and real-world user behavior. Combined with proprietary algorithms and quantitative analysis, the system continuously learns and adapts to deliver precise, practical investment suggestions tailored to user needs."
+      "summary": "What is an AI Agent and what are its benefits?",
+      "details": "An AI Agent acts as an intelligent 'investment assistant': supporting analysis, providing personalized recommendations, and automating repetitive tasks to save time and improve results."
     },
     {
-      "summary": "How does the AI Ranking system work?",
-      "details": "Miquant’s AI Ranking system continuously adapts and evolves based on user input and preferences. By learning from user priorities and investment requirements (risk appetite, portfolio rebalancing, optimization), the platform delivers personalized portfolios aligned with individual goals and strategies."
+      "summary": "How does Miquant ensure its AI system is reliable?",
+      "details": "We apply rigorous testing, transparency, and modern security measures to ensure that all analyses are accurate, objective, and verifiable."
     },
     {
-      "summary": "How does Miquant ensure AI reliability?",
-      "details": "Miquant ensures AI reliability through model cross-validation, user feedback scoring, and strict data filtering before training. As a result, the AI system remains transparent, explainable, and closely aligned with real-world investment needs."
+      "summary": "How is Miquant different from other platforms?",
+      "details": "The key difference is transparency. Instead of being a 'Blackbox,' Miquant’s AI delivers investment results that are both effective and clearly explainable."
+    },
+    {
+      "summary": "What is the difference between Free and Paid plans?",
+      "details": "Free Plan: includes essential tools, suitable for VN30 portfolios.\nPaid Plan: expands coverage to the entire market with monthly quantitative portfolio reports.\nSee more details at: "
     }
   ],
   "Pricing": {

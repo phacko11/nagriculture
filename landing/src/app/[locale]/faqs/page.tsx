@@ -84,10 +84,22 @@ export default function FAQsPage() {
                                 }}
                             >{item.summary}</Typography>
                         </AccordionSummary>
-                        <AccordionDetails sx={{
-                            color: fonts.neutral._6,
-                        }}>
-                            {item.details}
+                        <AccordionDetails sx={{ color: fonts.neutral._6 }}>
+                            {index === qnas.length - 1 ? (
+                                <Typography style={{ whiteSpace: 'pre-line' }}>
+                                    {item.details}
+                                    <a
+                                        href="/pricing"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        style={{ color: theme.palette.primary.main, textDecoration: 'underline' }}
+                                    >
+                                        {t('navigate.Pricing')}
+                                    </a>
+                                </Typography>
+                            ) : (
+                                <Typography style={{ whiteSpace: 'pre-line' }}>{item.details}</Typography>
+                            )}
                         </AccordionDetails>
                     </Accordion>
                 ))
