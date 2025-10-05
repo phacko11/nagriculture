@@ -141,7 +141,7 @@ export default function AimedCustomer() {
                                 sx={{
                                     position: 'absolute',
                                     inset: 0,
-                                    bgcolor: 'rgba(0, 0, 0, 0.5)',
+                                    bgcolor: 'rgba(0, 0, 80, 0.5)',
                                 }}
                             />
                             <Box

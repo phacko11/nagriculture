@@ -4,7 +4,7 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import { Mail } from "@mui/icons-material";
 import { useTheme } from "@mui/material/styles";
-import HomePage from "./home/page"
+import HomePage from "./home/HomePage"
 // import {useTranslations} from 'next-intl';
 
 // export default function Page() {

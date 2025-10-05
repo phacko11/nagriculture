@@ -34,19 +34,19 @@ const tabsData = [
         label: "CorporateFinance.Title",
         description1: "CorporateFinance.SubTitle",
         description2: "CorporateFinance.Desc",
-        img: '/assets/SK tai chinh.png'
+        img: '/assets/thap muoi.jpg'
     },
     {
         label: "MarketSentiment.Title",
         description1: "MarketSentiment.SubTitle",
         description2: "MarketSentiment.Desc",
-        img: '/assets/Sentiment.png'
+        img: '/assets/gamerule.jpg'
     },
     {
         label: "EconomicEvents.Title",
         description1: "EconomicEvents.SubTitle",
         description2: "EconomicEvents.Desc",
-        img: '/assets/SK tai chinh.png'
+        img: '/assets/note.jpg'
     }
 ];
 
@@ -133,7 +133,7 @@ export default function Insight() {
                                             width: '100%',
                                             borderRadius: '12px',
                                             position: 'relative',
-                                            zIndex: 1,
+                                            zIndex: 1   ,
                                             objectFit: 'cover',
                                             display: 'flex',
                                             alignItems: 'center',      // ✅ vertical center

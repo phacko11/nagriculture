@@ -54,6 +54,25 @@ export default function HomeHero() {
                 // backgroundColor: 'rgba(255, 255, 255, 0.3)', // Adjust transparency as needed
                 // backdropFilter: 'blur(2px)', // This creates the blur effect
             }}>
+                 <Box
+                        component="video"
+                        src="/assets/April linkedin 2.mp4"
+                        title="Monnas - Nagriculture"
+                        autoPlay={true}
+                        loop={true}
+                        muted
+                        controls
+                        playsInline // Important for iOS autoplay
+                        sx={{
+                            width: '100%',
+                            height: '100%',
+                            boxSizing: 'border-box',
+                            objectFit: 'cover',
+                            borderRadius: { xs: '8px', md: '16px' },
+                            // border: '3px solid',
+                            // borderColor: colors.neutral._0,
+                        }}
+                    />
                 <Box
                     sx={{
                         width: 'auto',
@@ -205,41 +224,6 @@ export default function HomeHero() {
                 </Box>
 
 
-                <Box
-                    className="neumorphic"
-                    sx={{
-                        
-                        display: 'flex',
-                        width: { xs: '100%', md: '90%', lg: '80%' },
-                        maxWidth: '1200px',
-                        aspectRatio: '16 / 9',
-                        borderColor: colors.neutral._0,
-                        borderRadius: '20px',
-                        overflow: 'hidden',
-                        p: { xs: '1px', md: '4px' },
-                        zIndex: 1,
-                    }}
-                >
-                    <Box
-                        component="video"
-                        src="/assets/April linkedin 2.mp4"
-                        title="fàwe"
-                        autoPlay={true}
-                        loop={true}
-                        muted
-                        controls
-                        playsInline // Important for iOS autoplay
-                        sx={{
-                            width: '100%',
-                            height: '100%',
-                            boxSizing: 'border-box',
-                            objectFit: 'cover',
-                            borderRadius: { xs: '8px', md: '16px' },
-                            // border: '3px solid',
-                            // borderColor: colors.neutral._0,
-                        }}
-                    />
-                </Box>
             </Box>
         </Box>
     )

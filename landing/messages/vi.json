@@ -1,66 +1,68 @@
 {
   "navigate": {
-    "Home": "Trang chủ",
-    "About": "Về chúng tôi",
-    "Research": "Nghiên cứu",
-    "Blog": "Blog",
-    "News": "Tin tức",
-    "FAQs": "FAQs",
-    "Company": "Công ty",
-    "Social": "Liên hệ",
-    "Pricing": "Gói dịch vụ",
-    "Slogan": "Nâng cao hiệu suất đầu tư của bạn",
-    "CTA": "Trải nghiệm miễn phí",
-    "CompanyInfo": "Công ty cổ phần Miquant | MST: 0318906170",
-    "Address": "5A/2 Trần Phú, P. Chợ Quán, TP. Hồ Chí Minh"
+    "Home": "Home",
+    "About": "About Project",
+    "Research": "Solution",
+    "Blog": "",
+    "News": "",
+    "FAQs": "About us",
+    "Company": "",
+    "Social": "",
+    "Pricing": "Contact",
+    "Slogan": "Enhance your knowledge and awareness of sustainable agriculture",
+    "CTA": "Experience the game now",
+    "CompanyInfo": "Monnas | Nagriculture",
+    "Address": ""
   },
   "HomePage": {
-    "Headline1": "Kiến tạo lợi thế đầu tư vượt trội",
-    "Headline2": "với nền tảng",
-    "Headline3": "AI định lượng",
-    "SubHeadline": "Chuyển hoá dữ liệu thành quyết định nhanh, chính xác, hiệu quả",
-    "CTA": "Khám phá ngay",
-    "Partner": "Là thành viên của",
+    "Headline1": "Learn and Play – Expand Your Knowledge",
+    "Headline2": "with",
+    "Headline3": "an immersive farming simulator",
+    "SubHeadline": "Grow crops, manage resources, cut carbon emissions, and explore the path toward sustainable agriculture through an engaging experience.",
+    "CTA": "Play the game now",
+
+    "Partner": "",
     "Chat": {
-      "Headline": "Biến mọi câu hỏi thành cơ hội đầu tư",
-      "SubHeadline": "Nắm trọn luận điểm sắc bén được chắt lọc từ dữ liệu chính xác",
+      "Headline": "",
+      "SubHeadline": "",
       "Questions": [
-        "Phân tích dòng tiền và nợ vay của CTCP Hoà Phát (HPG) trong 5 năm gần nhất",
-        "So sánh chỉ số P/E, P/B của nhóm ngành ngân hàng quý này",
-        "Phân tích cho tôi dự án RIG PV DRILLING III của PVD",
-        "Phân tích tác động của Tariff lên các doanh nghiệp xuất khẩu của Việt Nam"
+        "",
+        "",
+        "",
+        ""
       ],
-      "Placeholder": "Đặt câu hỏi tại đây…"
+      "Placeholder": ""
     },
     "WhoItsFor": {
-      "Headline": "Giải pháp cho nhiều cấp độ đầu tư",
-      "Title1": "Nhà đầu tư cá nhân & Chuyên gia phân tích",
-      "Card1": "Nhanh chóng phát hiện cơ hội đầu tư và nhận diện rủi ro thông qua phân tích toàn diện thị trường, tin tức và tâm lý đám đông trên nền tảng dữ liệu đã được kiểm chứng.",
-      "Title2": "Quỹ đầu tư & Tổ chức",
-      "Card2": "Tự động hoá quy trình nghiên cứu, tăng cường hiệu suất cho đội ngũ và ra quyết định nhanh hơn, chính xác hơn với mô hình AI độc quyền.",
-      "Title3": "Lập trình viên & Kỹ sư",
-      "Card3": "Xây dựng các ứng dụng tài chính tuỳ chỉnh, tích hợp dữ liệu sạch và đáng tin cậy vào hệ thống của bạn một cách liền mạch."
+      "Headline": "",
+      "Title1": "",
+      "Card1": ".",
+      "Title2": "",
+      "Card2": "",
+      "Title3": "",
+      "Card3": ""
     },
     "Insight": {
-      "Headline": "Phân tích đa chiều",
+      "Headline": "Get started with us!!!",
       "CorporateFinance": {
-        "Title": "Tài chính doanh nghiệp",
-        "SubTitle": "Soi chiếu sức khỏe tài chính của doanh nghiệp",
-        "Desc": "Nền tảng tự động bóc tách báo cáo tài chính, giúp bạn nhận diện các điểm sáng trong kinh doanh và phát hiện sớm các rủi ro tiềm ẩn về dòng tiền hay vay nợ, làm rõ bức tranh toàn cảnh ẩn sau các con số."
+        "Title": "Game Context",
+        "SubTitle": "",
+        "Desc": "The game is set in the rice plains of Thap Muoi, Dong Thap, where players take the role of modern farmers striving for sustainable agriculture. Using real-time climate and soil data, players simulate rice cultivation and make decisions about irrigation, fertilizer use, and crop management. Each action affects carbon emissions and methane output, teaching players how agricultural practices contribute to or reduce environmental impact. The goal is to achieve net-zero emissions while maintaining crop productivity. Through data-driven challenges, the game highlights the delicate balance between food production and environmental responsibility in today’s world."
+
       },
       "MarketSentiment": {
-        "Title": "Tâm lý thị trường",
-        "SubTitle": "Lắng nghe nhịp đập thị trường",
-        "Desc": "Nền tảng tổng hợp và phân tích dữ liệu từ các nguồn uy tín như tin tức, diễn đàn và cộng đồng chuyên gia. Thuật toán của Miquant sẽ xử lý và lượng hoá mức độ đồng thuận của thị trường, giúp bạn sớm nhận diện rủi ro tâm lý đám đông, nắm bắt dòng tiền, và ra quyết định với hiệu suất tốt hơn."
+        "Title": "Game rules",
+        "SubTitle": "",
+        "Desc": "🎮 Game Rules (very simple): Manage your entire rice-growing season through 4 stages. The lower your emissions, the higher your score! 🏆 Complete the season to unlock new levels"
       },
       "EconomicEvents": {
-        "Title": "Sự kiện kinh tế",
-        "SubTitle": "Tiên phong trước những biến đổi vĩ mô",
-        "Desc": "Nền tảng giúp bạn kết nối với các quyết định về chính sách và chỉ số kinh tế (CPI, GDP, lãi suất) với danh mục đầu tư của chính bạn. Chủ động điều chỉnh chiến lược để đón đầu cơ hội hoặc phòng ngừa rủi ro, thay vì bị động trước những con sóng lớn của thị trường."
+        "Title": "Important notes",
+        "SubTitle": "",
+        "Desc": "This is only a simulation game designed for learning and awareness about agriculture and emissions. It does not represent real-world data or farming outcomes. Play it with curiosity, explore your impact, and most importantly—relax, experiment, and chill while growing your virtual crops."
       }
     },
     "Features": {
-      "Headline": "Tính năng độc nhất",
+      "Headline": "HOW TO PLAY",
       "TrendingTopics": {
         "Title": "Chủ đề nổi bật",
         "Desc": "Công nghệ của chúng tôi tự động quét và phân cụm hàng ngàn tin tức mỗi ngày. Thay vì đọc hàng chục bài báo, bạn chỉ cần 5 phút để nắm bắt những chủ đề đầu tư quan trọng nhất, được cô đọng trong vài dòng phân tích sắc sảo."
