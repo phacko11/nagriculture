@@ -11,22 +11,22 @@ const featuresData = [
         title: 'TrendingTopics.Title',
         description: 'TrendingTopics.Desc',
         // Replace with your actual video or image source
-        mediaSrc: '/assets/Source - chu de.mp4',
+        mediaSrc: '/assets/play4.jpg',
     },
     {
         title: 'AutomatedStockValuation.Title',
         description: 'AutomatedStockValuation.Desc',
-        mediaSrc: '/assets/Source - DInh gia.mp4',
+        mediaSrc: '/assets/play2.jpg',
     },
     {
         title: 'AIChatbot.Title',
         description: 'AIChatbot.Desc',
-        mediaSrc: '/assets/Source - hard question.mp4',
+        mediaSrc: '/assets/play1.jpg',
     },
      {
         title: 'AIRanking.Title',
         description: 'AIRanking.Desc',
-       mediaSrc: '/assets/Source - stock.mp4',
+       mediaSrc: '/assets/play3.jpg',
     },
 ];
 
@@ -70,7 +70,7 @@ const FeatureItem = ({ feature, index }) => {
                 }}
             >
                 <Box
-                    component="video" // or 'img'
+                    component="img" // or 'img'
                     src={feature.mediaSrc}
                     autoPlay={true}
                     loop={true}

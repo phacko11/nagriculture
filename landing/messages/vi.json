@@ -77,7 +77,7 @@
       },
       "AIRanking": {
         "Title": "Level 4: Milk–Harvest Stage",
-        "Desc": "The player continues irrigation and fertilizer management. The system calculates the total emissions for the entire crop season, which are displayed in a summary table. At the end of the game, the player receives a summary of total emissions and cultivation efficiency.If emissions exceed the threshold, the player must restart and optimize their strategy. If low-emission targets are achieved, the player advances to the next level, where environmental conditions become more challenging"
+        "Desc": "The player continues irrigation and fertilizer management. The system calculates the total emissions for the entire crop season, which are displayed in a summary table. At the end of the game, the player receives a summary of total emissions and cultivation efficiency. If emissions exceed the threshold, the player must restart and optimize their strategy. If low-emission targets are achieved, the player advances to the next level, where environmental conditions become more challenging"
       }
     }
   },
