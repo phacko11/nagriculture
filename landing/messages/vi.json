@@ -64,20 +64,20 @@
     "Features": {
       "Headline": "HOW TO PLAY",
       "TrendingTopics": {
-        "Title": "Chủ đề nổi bật",
-        "Desc": "Công nghệ của chúng tôi tự động quét và phân cụm hàng ngàn tin tức mỗi ngày. Thay vì đọc hàng chục bài báo, bạn chỉ cần 5 phút để nắm bắt những chủ đề đầu tư quan trọng nhất, được cô đọng trong vài dòng phân tích sắc sảo."
+        "Title": "Level 1: Seedling Stage",
+        "Desc": "The player selects the cropping season (Winter–Spring, Summer–Autumn, or Autumn–Winter), the cultivation method (traditional, AWD, or regular rainfall), and the type of basal fertilizer. The system then calculates the initial emissions"
       },
       "AutomatedStockValuation": {
-        "Title": "Định giá cổ phiếu tự động",
-        "Desc": "Định giá nhanh trong 90 giây chỉ với 1 câu lệnh. Hệ thống sẽ thực hiện các phương pháp định giá phổ biến (P/E, P/B, EV/EBITDA), đồng thời cung cấp một bức tranh toàn cảnh về tiềm năng, triển vọng và cả rủi ro của hơn 400 cổ phiếu trên thị trường chứng khoán Việt Nam."
+        "Title": "Level 2: Tillering Stage",
+        "Desc": " The player adjusts the amount of irrigation water and fertilizer applied. At the end of this stage, the system calculates the emission rate"
       },
       "AIChatbot": {
-        "Title": "AI Chatbot",
-        "Desc": "Được xây dựng với một mục tiêu: trả lời mọi câu hỏi của nhà đầu tư, từ phân tích vĩ mô, ngành, cho đến từng cổ phiếu và dự án cụ thể."
+        "Title": "Level 3: Panicle Initiation Stage",
+        "Desc": "The player continues managing water and nutrients. At the end of the stage, the system records the emissions generated."
       },
       "AIRanking": {
-        "Title": "AI Ranking",
-        "Desc": "Từ ý tưởng đến một chiến lược có thể kiểm chứng chỉ trong vài giây. Thay vì sàng lọc thủ công, hãy để AI thực hiện công việc nặng nhọc: tìm kiếm, xếp hạng, và đề xuất danh mục tiềm năng dựa trên chính xác những tiêu chí bạn đưa ra."
+        "Title": "Level 4: Milk–Harvest Stage",
+        "Desc": "The player continues irrigation and fertilizer management. The system calculates the total emissions for the entire crop season, which are displayed in a summary table. At the end of the game, the player receives a summary of total emissions and cultivation efficiency.If emissions exceed the threshold, the player must restart and optimize their strategy. If low-emission targets are achieved, the player advances to the next level, where environmental conditions become more challenging"
       }
     }
   },

@@ -23,11 +23,11 @@ const featuresData = [
         description: 'AIChatbot.Desc',
         mediaSrc: '/assets/Source - hard question.mp4',
     },
-    // {
-    //     title: 'AI Ranking',
-    //     description: 'Từ ý tưởng đến một chiến lược có thể kiểm chứng chỉ trong vài giây. Thay vì sàng lọc thủ công, hãy để AI thực hiện công việc nặng nhọc: tìm kiếm, xếp hạng, và đề xuất danh mục tiềm năng dựa trên chính xác những tiêu chí bạn đưa ra.',
-    //     mediaSrc: '/assets/Source - stock.mp4',
-    // },
+     {
+        title: 'AIRanking.Title',
+        description: 'AIRanking.Desc',
+       mediaSrc: '/assets/Source - stock.mp4',
+    },
 ];
 
 const FeatureItem = ({ feature, index }) => {
@@ -116,60 +116,7 @@ export default function UniqueFeatures() {
                 {featuresData.map((feature, index) => (
                     <FeatureItem key={index} feature={feature} index={index} />
                 ))}
-                <Grid container alignItems="center" direction={'row'} spacing={10}>
-                    <Grid size={{ xs: 12, md: 6 }}
-                        className='neumorphic'
-                        sx={{
-                            ...HoverBackground,
-                            borderRadius: '12px',
-                            p: 6,
-                        }}>
-                        <Box sx={{ p: { xs: 2, md: 4 }, textAlign: { xs: 'center', md: 'left' } }}>
-                            <Typography variant="h5" component="h3" fontWeight="bold" gutterBottom>
-                                {t('AIRanking.Title')}
-                            </Typography>
-                            <Typography sx={{
-                                color: colors.neutral._8,
-                                fontSize: fonts.sizes.md,
-                                lineHeight: 1.8
-                            }}>
-                                {t('AIRanking.Desc')}
-                            </Typography>
-                        </Box>
-                    </Grid>
-                    <Grid size={{ xs: 12, md: 6 }}>
-                        <Box
-                            sx={{
-                                position: 'relative',
-                                height: '100%',
-                                minHeight: '300px',
-                                display: 'flex',
-                                alignItems: 'center',
-                                justifyContent: 'center',
-                            }}
-                        >
-                            <Box
-                                className='neumorphic'
-                                sx={{
-                                    aspectRatio: '1 / 1',       // ✅ Force 1:1 aspect ratio
-                                    width: '100%',
-                                    borderRadius: '12px',
-                                    position: 'relative',
-                                    zIndex: 1,
-                                    objectFit: 'cover',
-                                    display: 'flex',
-                                    alignItems: 'center',      // ✅ vertical center
-                                    justifyContent: 'center',
-                                    ...HoverBackground,
-                                }}
-                            >
-                                <MUIShinyText>
-                                    coming soon...
-                                </MUIShinyText>
-                            </Box>
-                        </Box>
-                    </Grid>
-                </Grid>
+        
             </Box>
             {/* </Container> */}
         </Box>
